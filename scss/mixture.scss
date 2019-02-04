@@ -1,0 +1,315 @@
+/*
+	1. Bootstrap files
+	2. Materializecss files
+	3. Semantic-ui files
+
+*/
+
+
+
+
+/* >>>>>>>>>>>>>> Bootstrap SCSS files <<<<<<<<<<<<<<<<<*/
+
+
+
+/*------------ Bootstrap Mixins -----------------*/
+
+/* @import "bootstrap/sass/mixins"; *//*for importing all mixins*//**/
+
+
+/*for importing mixins individually */
+
+/* // Utilities*/
+/* @import "bootstrap/sass/mixins/breakpoints";*/
+/* @import "bootstrap/sass/mixins/hover";*/
+/* @import "bootstrap/sass/mixins/image";*/
+/* @import "bootstrap/sass/mixins/badge";*/
+/* @import "bootstrap/sass/mixins/resize";*/
+/* @import "bootstrap/sass/mixins/screen-reader";*/
+/* @import "bootstrap/sass/mixins/size";*/
+/* @import "bootstrap/sass/mixins/reset-text";*/
+/* @import "bootstrap/sass/mixins/text-emphasis";*/
+/* @import "bootstrap/sass/mixins/text-hide";*/
+/* @import "bootstrap/sass/mixins/text-truncate";*/
+/* @import "bootstrap/sass/mixins/visibility";*/
+
+/* // // Components*/
+/* @import "bootstrap/sass/mixins/alert";*/
+/* @import "bootstrap/sass/mixins/buttons";*/
+/* @import "bootstrap/sass/mixins/caret";*/
+/* @import "bootstrap/sass/mixins/pagination";*/
+/* @import "bootstrap/sass/mixins/lists";*/
+/* @import "bootstrap/sass/mixins/list-group";*/
+/* @import "bootstrap/sass/mixins/nav-divider";*/
+/* @import "bootstrap/sass/mixins/forms";*/
+/* @import "bootstrap/sass/mixins/table-row";*/
+
+/* // // Skins*/
+/* @import "bootstrap/sass/mixins/background-variant";*/
+/* @import "bootstrap/sass/mixins/border-radius";*/
+/* @import "bootstrap/sass/mixins/box-shadow";*/
+/* @import "bootstrap/sass/mixins/gradients";*/
+/* @import "bootstrap/sass/mixins/transition";*/
+
+/* // // Layout*/
+/* @import "bootstrap/sass/mixins/clearfix";*/
+/* @import "bootstrap/sass/mixins/navbar-align";*/
+/* @import "bootstrap/sass/mixins/grid-framework";*/
+/* @import "bootstrap/sass/mixins/grid";*/
+/* @import "bootstrap/sass/mixins/float";*/
+
+
+
+/*------------ Bootstrap Others -----------------*/
+
+/* @import "bootstrap/sass/functions";*/
+/* @import "bootstrap/sass/variables";*/
+/* @import "bootstrap/sass/root";*/
+/* @import "bootstrap/sass/reboot";*/
+/* @import "bootstrap/sass/type";*/
+/* @import "bootstrap/sass/images";*/
+/* @import "bootstrap/sass/code";*/
+/* @import "bootstrap/sass/grid";*/
+/* @import "bootstrap/sass/tables";*/
+/* @import "bootstrap/sass/forms";*/
+/* @import "bootstrap/sass/buttons";*/
+/* @import "bootstrap/sass/transitions";*/
+/* @import "bootstrap/sass/dropdown";*/
+/* @import "bootstrap/sass/button-group";*/
+/* @import "bootstrap/sass/input-group";*/
+/* @import "bootstrap/sass/custom-forms";*/
+/* @import "bootstrap/sass/nav";*/
+/* @import "bootstrap/sass/navbar";*/
+/* @import "bootstrap/sass/card";*/
+/* @import "bootstrap/sass/breadcrumb";*/
+/* @import "bootstrap/sass/pagination";*/
+/* @import "bootstrap/sass/badge";*/
+/* @import "bootstrap/sass/jumbotron";*/
+/* @import "bootstrap/sass/alert";*/
+/* @import "bootstrap/sass/progress";*/
+/* @import "bootstrap/sass/media";*/
+/* @import "bootstrap/sass/list-group";*/
+/* @import "bootstrap/sass/close";*/
+/* @import "bootstrap/sass/modal";*/
+/* @import "bootstrap/sass/tooltip";*/
+/* @import "bootstrap/sass/popover";*/
+/* @import "bootstrap/sass/carousel";*/
+/* @import "bootstrap/sass/print";*/
+
+
+
+/*------------ Bootstrap Utilities -----------------*/
+
+/* @import "bootstrap/sass/utilities"; *//*for importing all utilities*//**/
+
+
+/*for importing mixins individually */
+
+/* @import "bootstrap/sass/utilities/align";*/
+/* @import "bootstrap/sass/utilities/background";*/
+/* @import "bootstrap/sass/utilities/borders";*/
+/* @import "bootstrap/sass/utilities/clearfix";*/
+/* @import "bootstrap/sass/utilities/display";*/
+/* @import "bootstrap/sass/utilities/embed";*/
+/* @import "bootstrap/sass/utilities/flex";*/
+/* @import "bootstrap/sass/utilities/float";*/
+/* @import "bootstrap/sass/utilities/position";*/
+/* @import "bootstrap/sass/utilities/screenreaders";*/
+/* @import "bootstrap/sass/utilities/sizing";*/
+/* @import "bootstrap/sass/utilities/spacing";*/
+/* @import "bootstrap/sass/utilities/text";*/
+/* @import "bootstrap/sass/utilities/visibility";*/
+
+
+
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>> Materializecss SCSS files <<<<<<<<<<<<<<<<<*/
+
+
+/* @charset "UTF-8";*/
+
+/* Color*/
+/* @import "materialize/sass/components/color-variables";*/
+/* @import "materialize/sass/components/color-classes";*/
+
+/* Variables;*/
+/* @import "materialize/sass/components/variables";*/
+
+/* Reset*/
+/* @import "materialize/sass/components/normalize";*/
+
+/* components*/
+/* @import "materialize/sass/components/global";*/
+/* @import "materialize/sass/components/badges";*/
+/* @import "materialize/sass/components/icons-material-design";*/
+/* @import "materialize/sass/components/grid";*/
+/* @import "materialize/sass/components/navbar";*/
+/* @import "materialize/sass/components/typography";*/
+/* @import "materialize/sass/components/transitions";*/
+/* @import "materialize/sass/components/cards";*/
+/* @import "materialize/sass/components/toast";*/
+/* @import "materialize/sass/components/tabs";*/
+/* @import "materialize/sass/components/tooltip";*/
+/* @import "materialize/sass/components/buttons";*/
+/* @import "materialize/sass/components/dropdown";*/
+/* @import "materialize/sass/components/waves";*/
+/* @import "materialize/sass/components/modal";*/
+/* @import "materialize/sass/components/collapsible";*/
+/* @import "materialize/sass/components/chips";*/
+/* @import "materialize/sass/components/materialbox";*/
+/* @import "materialize/sass/components/table_of_contents";*/
+/* @import "materialize/sass/components/sidenav";*/
+/* @import "materialize/sass/components/preloader";*/
+/* @import "materialize/sass/components/slider";*/
+/* @import "materialize/sass/components/carousel";*/
+/* @import "materialize/sass/components/tapTarget";*/
+/* @import "materialize/sass/components/pulse";*/
+/* @import "materialize/sass/components/datepicker";*/
+/* @import "materialize/sass/components/timepicker";*/
+
+
+/*------------ Materializecss Form files -----------------*/
+
+
+/* @import "materialize/sass/components/forms/forms"; *//*for importing all forms files*//**/
+
+
+/* for importing forms files individually*/
+
+/* Remove Focus Boxes*/
+/* select:focus {*/
+/*   outline: $select-focus;*/
+/* }*/
+
+/* button:focus {*/
+/*   outline: none;*/
+/*   background-color: $button-background-focus;*/
+/* }*/
+
+/* label {*/
+/*   font-size: $label-font-size;*/
+/*   color: $input-border-color;*/
+/* }*/
+
+/* @import 'input-fields';*/
+/* @import 'radio-buttons';*/
+/* @import 'checkboxes';*/
+/* @import 'switches';*/
+/* @import 'select';*/
+/* @import 'file-input';*/
+/* @import 'range';*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>> Semantic-Ui SCSS files <<<<<<<<<<<<<<<<< */
+
+
+/*------------ Semantic-ui Globals -----------------*/
+
+@import 'semantic_ui/sass/semantic-ui/globals/all'; /*for importing all globals*/
+
+
+/* for importing globals individually*/
+
+/* @import 'variables';*/
+/* @import 'reset';*/
+/* @import 'site';*/
+
+
+/*------------ Semantic-ui Globals -----------------*/
+
+@import 'semantic_ui/sass/semantic-ui/elements/all'; /*for importing all elements*/
+
+
+/* for importing elements individually*/
+
+/* @import 'button';*/
+/* @import 'container';*/
+/* @import 'divider';*/
+/* @import 'flag';*/
+/* @import 'header';*/
+/* @import 'icon';*/
+/* @import 'image';*/
+/* @import 'input';*/
+/* @import 'label';*/
+/* @import 'list';*/
+/* @import 'loader';*/
+/* @import 'rail';*/
+/* @import 'reveal';*/
+/* @import 'segment';*/
+/* @import 'step';*/
+
+
+/*------------ Semantic-ui Globals -----------------*/
+
+@import 'semantic_ui/sass/semantic-ui/collections/all'; /*for importing all collections*/
+
+
+/* for importing collections individually*/
+
+/* @import 'breadcrumb';*/
+/* @import 'form';*/
+/* @import 'grid';*/
+/* @import 'menu';*/
+/* @import 'message';*/
+/* @import 'table';*/
+
+
+/*------------ Semantic-ui Globals -----------------*/
+
+@import 'semantic_ui/sass/semantic-ui/views/all'; /*for importing all views*/
+
+
+/* for importing views individually*/
+
+/* @import 'ad';*/
+/* @import 'card';*/
+/* @import 'comment';*/
+/* @import 'feed';*/
+/* @import 'item';*/
+/* @import 'statistic';*/
+
+
+/*------------ Semantic-ui Globals -----------------*/
+
+@import 'semantic_ui/sass/semantic-ui/modules/all'; /*for importing all modules*/
+
+
+/* for importing modules individually*/
+
+/* @import 'accordion';*/
+/* @import 'checkbox';*/
+/* @import 'dimmer';*/
+/* @import 'dropdown';*/
+/* @import 'embed';*/
+/* @import 'modal';*/
+/* @import 'nag';*/
+/* @import 'popup';*/
+/* @import 'progress';*/
+/* @import 'rating';*/
+/* @import 'search';*/
+/* @import 'shape';*/
+/* @import 'sidebar';*/
+/* @import 'sticky';*/
+/* @import 'tab';*/
+/* @import 'transition';*/
+/* @import 'video';*/
+
+
+
