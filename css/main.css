@@ -1,0 +1,385 @@
+@font-face {
+  font-family: 'product-sans-regular';
+  font-style: normal;
+  src: url("../assets/fonts/Product Sans Regular.ttf"); }
+
+html, body {
+  background-color: #3A3A3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-family: 'product-sans-regular' !important;
+  line-height: unset !important; }
+
+.round-image {
+  width: 3vw;
+  height: 3vw;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+  border-radius: 50%; }
+
+#total-form-div {
+  background-color: #fff;
+  width: 76vw;
+  height: 80vh;
+  margin: auto; }
+  #total-form-div .col .row {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0; }
+  #total-form-div #static-form-area {
+    background-color: #fff;
+    height: inherit;
+    position: absolute;
+    width: 23.9%;
+    float: left; }
+    #total-form-div #static-form-area #brand-name-icon-area {
+      margin-top: 5.1vh;
+      margin-bottom: 8.6vh;
+      font-size: 2.86vw;
+      height: auto; }
+      #total-form-div #static-form-area #brand-name-icon-area #dentobit-icon {
+        width: 2.6vw;
+        margin-top: 0;
+        margin-right: 1vw;
+        vertical-align: text-top; }
+      #total-form-div #static-form-area #brand-name-icon-area #dento {
+        color: rgba(86, 128, 213, 0.81); }
+      #total-form-div #static-form-area #brand-name-icon-area #bit {
+        color: #40b97d; }
+    #total-form-div #static-form-area #survey-conductor-intro {
+      padding-left: 1.6vw; }
+      #total-form-div #static-form-area #survey-conductor-intro #starter-intro {
+        display: block;
+        font-size: 1.25vw;
+        color: #787878;
+        margin-bottom: 2.3vh; }
+      #total-form-div #static-form-area #survey-conductor-intro #survey-conductor-pic {
+        width: 6.56vw;
+        height: 6.56vw;
+        float: left;
+        -webkit-box-shadow: 0px 14px 21px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 14px 21px rgba(0, 0, 0, 0.16); }
+      #total-form-div #static-form-area #survey-conductor-intro #serveyer-name-designation {
+        display: block;
+        float: left;
+        margin-left: 1.14vw;
+        padding-top: 1.2vh; }
+        #total-form-div #static-form-area #survey-conductor-intro #serveyer-name-designation #serveyer-name {
+          font-size: 1.8vw;
+          color: #3e3e3e; }
+        #total-form-div #static-form-area #survey-conductor-intro #serveyer-name-designation #serveyer-designation {
+          font-size: 1.14vw;
+          color: rgba(62, 62, 62, 0.63); }
+    #total-form-div #static-form-area #listed-doctors {
+      padding-left: 1.6vw;
+      position: absolute;
+      bottom: 1.5vh;
+      margin: 0; }
+      #total-form-div #static-form-area #listed-doctors img {
+        margin-right: 1.04vw;
+        float: left;
+        height: 3.28vw;
+        width: 3.28vw; }
+      #total-form-div #static-form-area #listed-doctors #doctors-name {
+        font-size: 1.25vw;
+        color: #3d3d3d;
+        display: block;
+        margin-top: 1.3vh;
+        width: 90%; }
+      #total-form-div #static-form-area #listed-doctors #extention-text {
+        font-size: 1.04vw;
+        color: #707070;
+        display: block;
+        margin-top: 1vh;
+        width: 90%; }
+      #total-form-div #static-form-area #listed-doctors .btn {
+        text-transform: capitalize;
+        border-radius: 5px;
+        background-color: #40b97d;
+        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        line-height: unset;
+        height: unset;
+        padding: .9vh 1vw; }
+      #total-form-div #static-form-area #listed-doctors .btn:hover {
+        color: #fff; }
+  #total-form-div #dynamic-form-area {
+    background-color: rgba(86, 128, 213, 0.81);
+    width: 68.6%;
+    height: inherit;
+    float: right; }
+    #total-form-div #dynamic-form-area form {
+      height: inherit; }
+    #total-form-div #dynamic-form-area .form-stepper {
+      width: 100%;
+      height: inherit; }
+      #total-form-div #dynamic-form-area .form-stepper .prev {
+        position: absolute;
+        bottom: 3.33vh;
+        left: 3.54vw;
+        text-transform: capitalize;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #7a7a7a;
+        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        font-size: 1.35vw;
+        line-height: 1.4vw;
+        height: unset;
+        padding: 1.02vh 1.14vw;
+        font-family: 'product-sans-regular' !important; }
+        #total-form-div #dynamic-form-area .form-stepper .prev i {
+          font-size: .9vw;
+          margin: 0;
+          margin-right: .6vw;
+          width: unset;
+          height: unset;
+          line-height: unset; }
+      #total-form-div #dynamic-form-area .form-stepper .next {
+        position: absolute;
+        bottom: 3.33vh;
+        right: 3.54vw;
+        text-transform: capitalize;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #7a7a7a;
+        -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+        font-size: 1.35vw;
+        line-height: 1.4vw;
+        height: unset;
+        padding: 1.02vh 1.14vw;
+        font-family: 'product-sans-regular' !important; }
+        #total-form-div #dynamic-form-area .form-stepper .next i {
+          font-size: .9vw;
+          margin: 0;
+          margin-left: .6vw;
+          width: unset;
+          height: unset;
+          line-height: unset; }
+      #total-form-div #dynamic-form-area .form-stepper .step .title {
+        display: inline-block;
+        font-size: 3.12vw;
+        margin-top: 4.53vh;
+        margin-left: 3.54vw;
+        font-family: 'product-sans-regular' !important; }
+      #total-form-div #dynamic-form-area .form-stepper .step .step-counter {
+        display: inline-block;
+        font-size: 1.35vw;
+        color: #fff;
+        float: right;
+        margin-top: 6.48vh;
+        margin-right: 3.54vw; }
+      #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder {
+        width: auto;
+        height: 52.22vh;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-top: 3.98vh;
+        margin-left: 3.54vw;
+        margin-right: 3.54vw; }
+        #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .social-platform-section {
+          margin-bottom: 3.7vh; }
+        #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #sign-up-other-platform {
+          display: inline-block;
+          width: 100%;
+          font-size: 1.61vw;
+          color: #3e3e3e;
+          letter-spacing: .1vw;
+          padding-left: 1.93vw;
+          margin-top: 3.15vh;
+          margin-bottom: 0;
+          padding-bottom: 2.77vh;
+          border-bottom: solid 0.7px rgba(112, 112, 112, 0.23); }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #sign-up-other-platform .btn {
+            font-size: 1.35vw;
+            vertical-align: middle;
+            font-family: 'product-sans-regular' !important;
+            text-transform: capitalize;
+            border-radius: 8px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            line-height: 1.4vw;
+            height: unset;
+            padding: 1.8vh 1.67vw;
+            letter-spacing: 0.08vw; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #sign-up-other-platform .btn i {
+              font-size: 2vw;
+              margin: 0;
+              margin-right: 1.61vw;
+              width: unset;
+              height: unset;
+              line-height: unset; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #sign-up-other-platform .facebook {
+            background-color: #475993; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #sign-up-other-platform .google {
+            background-color: #dc4e41; }
+        #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container {
+          padding-right: 0; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container center {
+            float: right; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #pro-pic-container {
+            width: 9.27vw;
+            height: auto;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #pro-pic-container input {
+              display: none; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #pro-pic-container img {
+              -o-object-fit: cover;
+              object-fit: cover;
+              width: 100%;
+              height: 19vh;
+              -webkit-transition: .5s ease;
+              -o-transition: .5s ease;
+              transition: .5s ease; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #pro-pic-container #overlay-div {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              bottom: 0;
+              top: 0;
+              left: 0;
+              right: 0;
+              opacity: 0;
+              background-color: #252525;
+              -webkit-transition: .5s ease;
+              -o-transition: .5s ease;
+              transition: .5s ease;
+              text-align: center;
+              cursor: pointer; }
+              #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #pro-pic-container #overlay-div i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                margin-right: 0;
+                font-size: 2vw;
+                color: #fff; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #pro-pic-container:hover img {
+            opacity: 0.3; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #pro-pic-container:hover #overlay-div {
+            opacity: .7; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container .error-message {
+            color: #dc4e41;
+            font-weight: bold;
+            font-size: .8vw;
+            margin-top: 1vh; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #male-female-btn {
+            position: relative;
+            width: 9.27vw;
+            height: auto;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-top: 2.78vh; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #male-female-btn input {
+              opacity: 0;
+              cursor: pointer;
+              position: absolute; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #male-female-btn .custom-radio {
+              width: 50%;
+              padding-top: .92vh;
+              padding-bottom: .92vh;
+              background-color: #fff;
+              position: absolute;
+              font-size: 1.09vw;
+              letter-spacing: .07vw;
+              color: #3e3e3e;
+              cursor: pointer; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #male-female-btn .custom-radio:hover {
+              background-color: #f2f2f2;
+              -webkit-transition: .4s ease;
+              -o-transition: .4s ease;
+              transition: .4s ease; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #male-female-btn .male {
+              left: 0;
+              border-top-left-radius: 8px;
+              border-bottom-left-radius: 8px;
+              -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+              box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #male-female-btn .female {
+              right: 0;
+              border-top-right-radius: 8px;
+              border-bottom-right-radius: 8px;
+              -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+              box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+              background-color: #fff; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #pro-pic-gender-container #male-female-btn input:checked ~ .custom-radio {
+              background-color: #7598DD;
+              color: #fff;
+              z-index: 10; }
+        #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container {
+          padding-left: 2.03vw;
+          font-family: 'product-sans-regular' !important; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .ui.label {
+            background-color: #ebebeb;
+            border: none;
+            border-radius: 12px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            width: 5vw;
+            padding-right: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: 1.2vw;
+            color: #7a7a7a;
+            letter-spacing: 0.08vw;
+            font-weight: normal;
+            line-height: 5.09vh;
+            height: 5.09vh; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .ui.label i {
+              margin: 0;
+              float: right;
+              vertical-align: middle;
+              line-height: 5.09vh;
+              height: 5.09vh; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .ui.input, #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .ui.form {
+            margin-bottom: 2.6vh; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .ui.input > input,
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .field > input {
+            border-radius: 12px;
+            border: none;
+            background-color: #ebebeb;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            font-size: 1.2vw;
+            color: #7a7a7a;
+            letter-spacing: 0.08vw;
+            line-height: 5.09vh;
+            height: 5.09vh;
+            width: 24.12vw;
+            padding: 1.2vh .94vw; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .ui.input.focus > input,
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .ui.input > input:focus,
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .field.focus > input,
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .field > input:focus {
+            border-radius: 12px;
+            border: none;
+            background-color: #ebebeb;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .field > input {
+            width: 29.12vw;
+            border-radius: 12px; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .field.focus > input,
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .field > input:focus {
+            border-radius: 12px; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .field {
+            margin: 0; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder #personal-info-container .field label {
+              margin: .8vh 0.2vw;
+              margin-top: 0;
+              font-size: 1.2vw;
+              color: #7a7a7a;
+              letter-spacing: 0.08vw;
+              font-weight: normal; }
