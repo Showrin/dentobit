@@ -157,11 +157,6 @@ html, body {
 
 		form {
 			height: inherit;
-		}
-
-		.form-stepper {
-			width: 100%;
-			height: inherit;
 
 			.prev {
 				position: absolute;
@@ -212,6 +207,11 @@ html, body {
 					line-height: unset;
 				} 
 			}
+		}
+
+		.form-stepper {
+			width: 100%;
+			height: inherit;
 
 			.step {
 

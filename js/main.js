@@ -10,8 +10,6 @@ $(document).ready(function() {
         nextArrow:"<button type='button' class='waves-effect waves-dark btn next'><i class='chevron right icon'></i></i>Next </button>",
         fnCanGoNext: function(instance, currentSlide){
             
-            console.log("fnCanGoNext called");
-            
             var currentSlide = instance.$slides.eq(currentSlide);
             var clickedIndex = $('.slick-active').attr("data-slick-index");
 
@@ -50,35 +48,27 @@ $(document).ready(function() {
 
     var prevBtn = $('#total-form-div #dynamic-form-area form .form-stepper .prev');
     var nextBtn = $('#total-form-div #dynamic-form-area form .form-stepper .next');
-	var form = document.querySelector("#sign-up-form");
+	var finishBtn = $('#total-form-div #dynamic-form-area form #finishBtn');
 	
 	prevBtn.hide();
+	finishBtn.hide();
 
 
 	nextBtn.click(function(e) {
 	    var clickedIndex = $('.slick-active').attr("data-slick-index");
-	    var checkValidity = false;
-	    console.log(clickedIndex);
-
-	    // if (!form.reportValidity()) {
-	    // 	return false;
-	    // }
 
 	    $('.form_stepper').slick('slickNext');
 
-	    if (clickedIndex == 4 && checkValidity) {
+	    if (clickedIndex == 4) {
 	    	nextBtn.transition('zoom');
-	    	nextBtn.html("<i class='check right icon' style='color: #40b97d'></i></i><span style='color: #40b97d'>Finish</span>");
-	    	nextBtn.transition('zoom');
+	    	finishBtn.transition('zoom');
 
-	    } else if (clickedIndex == 4 && !checkValidity) {
+	    } else if (clickedIndex == 4) {
 	    	nextBtn.transition('shake'); 
 
 	    } else if (clickedIndex == 1) {
 	    	prevBtn.transition('zoom');
-	    } else {
-	        nextBtn.html("<i class='chevron right icon'></i></i>Next");
-	    }
+	    } 
 	});
 
 	prevBtn.click(function(e) {
@@ -87,13 +77,15 @@ $(document).ready(function() {
 	    if (clickedIndex == 0) {
 	    	prevBtn.transition('zoom');
 	    } else if (clickedIndex == 3) {
+	    	finishBtn.transition('zoom');
 	    	nextBtn.transition('zoom');
-	    	nextBtn.html("<i class='chevron right icon'></i></i>Next");
-	    	nextBtn.transition('zoom');
-	    } else {
-	        nextBtn.html("<i class='chevron right icon'></i></i>Next");
 	    }
 	});
+
+	finishBtn.click(function(e) {
+		finishBtn.transition('shake');
+	});
+
 });
 
 

@@ -115,10 +115,7 @@ html, body {
     float: right; }
     #total-form-div #dynamic-form-area form {
       height: inherit; }
-    #total-form-div #dynamic-form-area .form-stepper {
-      width: 100%;
-      height: inherit; }
-      #total-form-div #dynamic-form-area .form-stepper .prev {
+      #total-form-div #dynamic-form-area form .prev {
         position: absolute;
         bottom: 3.33vh;
         left: 3.54vw;
@@ -133,14 +130,14 @@ html, body {
         height: unset;
         padding: 1.02vh 1.14vw;
         font-family: 'product-sans-regular' !important; }
-        #total-form-div #dynamic-form-area .form-stepper .prev i {
+        #total-form-div #dynamic-form-area form .prev i {
           font-size: .9vw;
           margin: 0;
           margin-right: .6vw;
           width: unset;
           height: unset;
           line-height: unset; }
-      #total-form-div #dynamic-form-area .form-stepper .next {
+      #total-form-div #dynamic-form-area form .next {
         position: absolute;
         bottom: 3.33vh;
         right: 3.54vw;
@@ -155,13 +152,16 @@ html, body {
         height: unset;
         padding: 1.02vh 1.14vw;
         font-family: 'product-sans-regular' !important; }
-        #total-form-div #dynamic-form-area .form-stepper .next i {
+        #total-form-div #dynamic-form-area form .next i {
           font-size: .9vw;
           margin: 0;
           margin-left: .6vw;
           width: unset;
           height: unset;
           line-height: unset; }
+    #total-form-div #dynamic-form-area .form-stepper {
+      width: 100%;
+      height: inherit; }
       #total-form-div #dynamic-form-area .form-stepper .step .title {
         display: inline-block;
         font-size: 3.12vw;
