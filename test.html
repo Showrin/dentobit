@@ -7,26 +7,164 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!-- >>>>>>>>>>>>>>>> Linking CSS files <<<<<<<<<<<<<<<<< -->
-
-	<link rel="stylesheet" type="text/css" href="css/semantic-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/mixture.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<!-- >>>>>>>>>>>>>>>> Linking Favicon <<<<<<<<<<<<<<<<< -->
-	<link rel="shortcut icon" type="images/x-icon" href="assets/images/icon/dentobit-icon.png">
+	<link rel="shortcut icon" type="images/x-icon" href="assets/images/icon/dentobit-icon.png"><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/multiple-select/1.2.2/multiple-select.min.css">
+
+<style type="text/css">
+	.w300 {
+    width: 300px;
+}
+</style>
 	
 </head>
 
 <body>
 
-	
-	<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="js/frameworks/semantic.js"></script>
 
-<script type="text/javascript">
-	$('.ui.dropdown')
-  .dropdown()
-;
+<style>
+.wrap {
+  marin: 0 auto;
+}
+ul.tabs {
+	width: 390px;
+	height: 80px;
+	margin: 0 auto;
+	list-style: none;
+	overflow: hidden;
+  padding: 0;
+}
+ul.tabs li {	
+	float: left;
+	width: 130px;
+
+  
+}
+ul.tabs li a {
+	position: relative;
+	display: block;
+	height: 30px;
+	margin-top: 40px;
+	padding: 10px 0 0 0;
+	font-size: 18px;
+	text-align: center;	
+	text-decoration: none;
+	color: #ffffff;
+	background: #6edeef;
+	box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
+	border: 0px solid #000000;
+	transition: padding 0.2s ease, margin 0.2s ease;
+}
+.tabs li:first-child a {
+	z-index: 3;
+	border-top-left-radius: 8px;
+}
+.tabs li:nth-child(2) a {
+	z-index: 2;
+}
+.tabs li:last-child a {
+	z-index: 1;
+  	box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
+  	border-top-right-radius: 8px;
+}
+ul.tabs li a:hover {
+	margin: 35px 0 0 0;
+	padding: 10px 0 5px 0;
+}
+ul.tabs li a.active {
+	margin: 30px 0 0 0;
+	padding: 10px 0 10px 0;
+	background: #545f60;
+	color: #6edeef;
+	z-index: 4;
+	outline: none;
+}
+.group:before,
+.group:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.group:after {
+    clear: both;
+}
+#content {
+	width: 390px;
+	height: 200px;
+	margin: 0 auto;
+	background: #545f60;
+	box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+p{
+  padding: 30px 40px;
+  color: #ffffff;
+  line-height: 26px;
+  font-size: 18px;
+  margin: 0;
+}
+#one {
+  
+}
+#two {
+  
+}
+#three {
+  
+}
+</style>
+
+<div class="wrap">
+  
+  <ul class="tabs group">
+    <li><a class="active" href="#/one">Light &</a></li>
+    <li><a href="#/two">Sexy</a></li>
+    <li><a href="#/three">Tabs</a></li>
+  </ul>
+  
+  <div id="content">
+    <p id="one">Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur </p>
+    <p id="two">Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq</p>
+    <p id="three">Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq</p>
+  </div>
+  
+</div>
+<script type="text/javascript" src="js/frameworks/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize/js/global.js"></script>
+	<script type="text/javascript" src="js/materialize/js/component.js"></script>
+	<script type="text/javascript" src="js/materialize/js/anime.min.js"></script>
+	<script type="text/javascript" src="js/materialize/js/cash.js"></script>
+	<script type="text/javascript" src="js/materialize/js/buttons.js"></script>
+	<script type="text/javascript" src="js/materialize/js/waves.js"></script>
+	<script type="text/javascript" src="js/materialize/js/carousel.js"></script>
+	<script type="text/javascript" src="js/frameworks/slick.js"></script>
+	<script type="text/javascript"src="js/frameworks/modified_slick.js"></script>
+	<script type="text/javascript" src="js/frameworks/semantic.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/multiple-select/1.2.2/multiple-select.min.js"></script>
+
+
+	<script>
+ (function($) {
+
+	var tabs =  $(".tabs li a");
+  
+	tabs.click(function() {
+		var content = this.hash.replace('/','');
+		tabs.removeClass("active");
+		$(this).addClass("active");
+    $("#content").find('p').hide();
+    $(content).fadeIn(200);
+	});
+
+})(jQuery);
 </script>
 	
 </body>
