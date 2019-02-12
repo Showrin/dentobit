@@ -1,19 +1,22 @@
 //script for carousel for step by step form validation 
 // and next+prev buttons
 $(document).ready(function() {
+
+    var formValidityChecker = true;//for avoiding wrong button transition
+
     var form_stepper = $('.form-stepper').slick({
     	swipe: false,
         infinite: false,
         draggable: false,
         accessibility: false,
-        prevArrow:"<button type='button' class='waves-effect waves-dark btn prev'><i class='chevron left icon'></i>Back </button>",
-        nextArrow:"<button type='button' class='waves-effect waves-dark btn next'><i class='chevron right icon'></i>Next </button>",
+        prevArrow:"<button id='slide-prev' type='button' class='waves-effect waves-dark btn prev'><i class='chevron left icon'></i>Back </button>",
+        nextArrow:"<button id='slide-next' type='button' class='waves-effect waves-dark btn next'><i class='chevron right icon'></i>Next </button>",
         fnCanGoNext: function(instance, currentSlide){
             
             var currentSlide = instance.$slides.eq(currentSlide);
             var clickedIndex = $('.slick-active').attr("data-slick-index");
 
-            if (clickedIndex == 0) {
+    //         if (clickedIndex == 0) {
             	
     //         	var proPic = currentSlide.find("#pro-pic-input");
     //         	var name = currentSlide.find("#full-name");
@@ -21,29 +24,240 @@ $(document).ready(function() {
     //         	var email = currentSlide.find("#email");
             
 	 		// 	if (!proPic[0].validity.valid) {
+
 				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("Please Upload Your Image");
+				// 	formValidityChecker = false;
 				// 	return false;
+
 				// } else if (!name[0].validity.valid) {
+
 				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-				// 	name[0].reportValidity();
+				// 	var value = $('.name-field #full-name').val();
+
+				// 	if (value == "") {
+    // 					$('.name-field #full-name').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.name-field #full-name').val('');
+    // 					$('.name-field #full-name').attr("placeholder", "Only Alphabates are allowed");
+				// 	}
+            		
+    //         		formValidityChecker = false;
 				// 	return false;
+
 				// } else if (!contact[0].validity.valid) {
+
 				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-				// 	contact[0].reportValidity();
+				// 	var value = $('.contact-field #contact').val();
+
+				// 	if (value == "") {
+    // 					$('.contact-field #contact').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.contact-field #contact').val('');
+    // 					$('.contact-field #contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
+				// 	}
+            		
+    //         		formValidityChecker = false;
 				// 	return false;
+
 				// } else if (!email[0].validity.valid) {
+
 				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-				// 	email[0].reportValidity();
+				// 	var value = $('.email-field #email').val();
+
+				// 	if (value == "") {
+    // 					$('.email-field #email').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.email-field #email').val('');
+    // 					$('.email-field #email').attr("placeholder", "Please give a valid email address");
+				// 	}
+            		
+    //         		formValidityChecker = false;
 				// 	return false;
+
 				// } else {
+
 				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+    //         		formValidityChecker = true;
 				// 	return true;
+
 				// }
 
-            } else {
-            	return true;
-            }
+    //         } else if (clickedIndex == 1) {
 
+    //         	var college = currentSlide.find("#dental-college-name");
+    //         	var hscYear = currentSlide.find("#hsc-year");
+    // 			var degrees = currentSlide.find("#degrees");
+    // 			var batch = currentSlide.find("#batch");
+    // 			var bmdc = currentSlide.find("#bmdc-reg-no");
+    			
+
+    // 			if (!college[0].validity.valid) {
+
+				// 	var value = $('.college-field #dental-college-name').val();
+
+				// 	if (value == "") {
+    // 					$('.college-field .default').addClass('error').text("Please fill out the field");
+				// 	}
+            		
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else if (!hscYear[0].validity.valid) {
+
+				// 	var value = $('.hsc-field #hsc-year').val();
+				// 	var hscYear = document.getElementById('hsc-year');
+				// 	var currentYear = (new Date()).getFullYear();
+
+				// 	if (value < 1950) {
+    // 					$('.hsc-field #hsc-year').val(1950);
+				// 	} else {
+    //         			$('.hsc-field #hsc-year').val(currentYear);
+				// 	}
+            		
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else if (!degrees[0].validity.valid) {
+
+    // 				$('.degree-field .placeholder').addClass("error").text("Please Choose at least one");
+    //         		formValidityChecker = false;
+    //         		return false;
+
+    //         	} else if (!bmdc[0].validity.valid) {
+
+    //         		$('.bmdc-field #bmdc-reg-no').val('');
+    //  				$('.bmdc-field #bmdc-reg-no').attr("placeholder", "Should be 4-5 digits");
+    //  				formValidityChecker = false;
+    //  				return false;
+    //         	} else {
+    //         		formValidityChecker = true;
+    //         		return true;
+    //         	}
+
+    //         } else if (clickedIndex == 2) {
+
+    //         	var academicRank = currentSlide.find('#academic-rank');
+    //         	var appointmentContact = currentSlide.find('#appointment-contact');
+    //         	var consultFee = currentSlide.find('#consult-fee');
+
+    //         	if (!academicRank[0].validity.valid) {
+
+				// 	var value = $('.academic-rank-field #academic-rank').val();
+
+				// 	if (value == "") {
+    // 					$('.academic-rank-field .default').addClass('error').text("Please fill out the field");
+				// 	}
+            		
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else if (!appointmentContact[0].validity.valid) {
+
+				// 	var value = $('.appointment-contact-field #appointment-contact').val();
+
+				// 	if (value == "") {
+    // 					$('.appointment-contact-field #appointment-contact').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.appointment-contact-field #appointment-contact').val('');
+    // 					$('.appointment-contact-field #appointment-contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
+				// 	}
+            		
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else if (!consultFee[0].validity.valid) {
+
+				// 	var value = $('.consult-fee-field #consult-fee').val();
+
+				// 	if (value == "") {
+    // 					$('.consult-fee-field #consult-fee').attr("placeholder", "Please fill out the field");
+				// 	}
+
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else {
+    //         		formValidityChecker = true;
+    //         		return true;
+    //         	}
+
+    //         } else if (clickedIndex == 3) {
+
+    //         	var workplaceName_1 = currentSlide.find('#work-one .workplace-name-field #workplace-name');
+    //         	var workplaceAddr_1 = currentSlide.find('#work-one .workplace-addr-field #workplace-addr');
+    //         	var houseAddr_1 = currentSlide.find('#work-one .house-addr-field #house-addr');
+    //         	var road_1 = currentSlide.find('#work-one .road-field #road');
+    //         	var thana_1 = currentSlide.find('#work-one .thana-field #thana');
+
+
+    //         	if (!workplaceName_1[0].validity.valid) {
+
+				// 	var value = workplaceName_1.val();
+
+				// 	if (value == "") {
+    // 					workplaceName_1.attr("placeholder", "Please fill out the field");
+				// 	}
+            		
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else if (!workplaceAddr_1[0].validity.valid) {
+
+				// 	var value = workplaceAddr_1.val();
+
+				// 	if (value == "") {
+    // 					$('#work-one .workplace-addr-field').addClass('red-placeholder');
+    // 					workplaceAddr_1.attr("placeholder", "Please fill out the field");
+				// 	}
+            		
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else if (!houseAddr_1[0].validity.valid) {
+
+				// 	var value = houseAddr_1.val();
+
+				// 	if (value == "") {
+    // 					houseAddr_1.attr("placeholder", "Please fill out the field");
+				// 	}
+            		
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else if (!road_1[0].validity.valid) {
+
+				// 	var value = road_1.val();
+
+				// 	if (value == "") {
+    // 					road_1.attr("placeholder", "Please fill out the field");
+				// 	}
+            		
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else if (!thana_1[0].validity.valid) {
+
+				// 	var value = thana_1.val();
+
+				// 	if (value == "") {
+    // 					$('.thana-field .default').addClass('error').text("Please fill out the field");
+				// 	}
+            		
+    //         		formValidityChecker = false;
+				// 	return false;
+
+				// } else {
+    //         		formValidityChecker = true;
+    //         		return true;
+
+				// }
+
+    //         } else {
+    //         	formValidityChecker = true;
+    //         	return true;
+    //         }
+
+            formValidityChecker = true;
             return true;
         }
     });
@@ -57,29 +271,28 @@ $(document).ready(function() {
 
 
 	nextBtn.click(function(e) {
-		
-		console.log('rrrr');
+
 	    var clickedIndex = $('.slick-active').attr("data-slick-index");
+		
+		console.log(formValidityChecker);
 
-	    $('.form_stepper').slick('slickNext');
+	    if (clickedIndex == 4 && formValidityChecker == true) {
+	    	$('#service-next').show();
+	    	nextBtn.hide();
 
-	    if (clickedIndex == 4) {
-	    	finishBtn.transition('zoom');
-	    	nextBtn.transition('zoom');
-
-	    } else if (clickedIndex == 1) {
-	    	prevBtn.transition('zoom');
+	    } else if (clickedIndex == 1 && formValidityChecker == true) {
+	    	prevBtn.fadeIn(50);
 	    } 
 	});
 
 	prevBtn.click(function(e) {
 	    var clickedIndex = $('.slick-active').attr("data-slick-index");
 
-	    if (clickedIndex == 0) {
-	    	prevBtn.transition('zoom');
-	    } else if (clickedIndex == 3) {
-	    	nextBtn.transition('zoom');
-	    	finishBtn.transition('zoom');
+	    if (clickedIndex == 0 && formValidityChecker == true) {
+	    	prevBtn.fadeOut(50);
+	    } else if (clickedIndex == 3 && formValidityChecker == true) {
+	    	$('#service-next').hide();
+	    	nextBtn.show();
 	    }
 	});
 
@@ -87,15 +300,37 @@ $(document).ready(function() {
 		finishBtn.transition('shake');
 	});
 
+	//script to remove error class from dental college field
+	$('.college-field .item').click( function(e) {
+		$('.college-field .text').removeClass('error');
+	});
+
+	//script to remove error class from degree field
+	$('.degree-field .ms-drop li').click( function(e) {
+		$('.degree-field .ms-parent span').removeClass('error');
+	});
+
+	//script to remove error class from academic rank field
+	$('.academic-rank-field .item').click( function(e) {
+		$('.academic-rank-field .text').removeClass('error');
+	});
+
+	//script to remove error class from thana field
+	$('.thana-field .item').click( function(e) {
+		$('.thana-field .text').removeClass('error');
+	});
+
 });
+
+
+
 
 //script to enable semantic dropdown
 $('.ui.dropdown').dropdown();
 $('.upward .dropdown')
   .dropdown({
     direction: 'upward'
-  })
-;
+  });
 
 //script to set max & value field of hsc-year to current year
 var hscYear = document.getElementById('hsc-year');
@@ -211,18 +446,30 @@ $('#services-2-5').multipleSelect({
         	$("#content").find('#two').hide();
         	$("#content").find('#three').hide();
         	$(content).fadeIn(200);
+        	$('#slide-prev').show();
+			$('#service-prev').hide();
+			$('#finishBtn').fadeOut(50);
+			$('#service-next').fadeIn(50);
 
         } else if (content == "#two") {
 
         	$("#content").find('#one').hide();
         	$("#content").find('#three').hide();
         	$(content).fadeIn(200);
+        	$('#slide-prev').hide();
+			$('#service-prev').show();
+			$('#finishBtn').fadeOut(50);
+			$('#service-next').fadeIn(50);
 
         } else {
 
         	$("#content").find('#one').hide();
         	$("#content").find('#two').hide();
         	$(content).fadeIn(200);
+        	$('#slide-prev').hide();
+			$('#service-prev').show();
+			$('#service-next').fadeOut(50);
+			$('#finishBtn').fadeIn(50);
 
         }
     });
@@ -267,6 +514,34 @@ $('#services-2-5').multipleSelect({
 })(jQuery);
 
 
+//script for service page step controlling
+$('#service-next').click ( function(e) {
+
+	if($('#content #one').css("display") == 'block') {
+		
+		$('#service-tab-2').trigger("click");
+
+	} else if ($('#content #two').css("display") == 'block') {
+
+		$('#service-tab-3').trigger("click");
+
+	}
+});
+
+$('#service-prev').click ( function(e) {
+
+	if($('#content #two').css("display") == 'block') {
+		
+		$('#service-tab-1').trigger("click");
+
+	} else if($('#content #three').css("display") == 'block') {
+		
+		$('#service-tab-2').trigger("click");
+
+	}
+});
+
+
 //script for showing uploaded image
 $('#hospital-pic-container #image-2').hide();
 $('#hospital-pic-container #image-3').hide();
@@ -285,6 +560,8 @@ function readURL(input) {
 	        };
 
 	        reader.readAsDataURL(input.files[0]);
+	        $('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+
 	    }
     	
     } else if (input.id == "hospital-pic-input-1-1") {
@@ -427,3 +704,10 @@ function readURL(input) {
     	
     }
 }
+
+$(document).keypress(
+    function(event) {
+	    if (event.which == '13') {
+	        event.preventDefault();
+	    }
+});

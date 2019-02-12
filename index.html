@@ -20,7 +20,7 @@
 	
 </head>
 
-<body oncontextmenu="return false">
+<body>
 
 	<div id="total-form-div" class="row">
 		
@@ -141,8 +141,9 @@
 									<div class="field">
 										<label>Name</label>
 									</div>
-
-				        			<div class="ui labeled input">
+									
+									<!-- a class named .name-field is added in this div -->
+				        			<div class="ui labeled input name-field">  
 									    <div class="ui dropdown left labeled label">
 									        <div class="text">Dr.</div>
 									        <i class="dropdown icon"></i>
@@ -151,20 +152,25 @@
 									            <div class="item">Prof.</div>
 									        </div>
 									    </div>
-									    <input id="full-name" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" pattern="[a-z A-Z]{1,200}" required title="Only Alphabets are allowed">
+									    <!-- title is removed -->
+									    <input id="full-name" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" pattern="[a-z A-Z]{1,200}" required>
 									</div>
 
-									<div class="ui form">
+									<!-- a class named .contact-field is added in this div -->
+									<div class="ui form contact-field">
 									  <div class="field">
 									    <label>Contact No</label>
-									    <input id="contact" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" pattern="[0-9]{11}" required title="Only Digits are allowed and should be 11 digits">
+									    <!-- title is removed -->
+									    <input id="contact" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" pattern="[0-9]{11}" required>
 									  </div>
 									</div>
-
-									<div class="ui form">
+									
+									<!-- a class named .email-field is added in this div -->
+									<div class="ui form email-field">
 									  <div class="field">
 									    <label>Email</label>
-									    <input id="email" type="email" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+									    <!-- email checking pattern is changed and title is removed -->
+									    <input id="email" type="email" pattern="^[a-z0-9](\.?[a-z0-9_-]){0,}@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
 									  </div>
 									</div>
 
@@ -187,10 +193,12 @@
 				        		<div class="row">
 				        			
 				        			<div class="col l8 m8">
-										<div class="ui form">
+				        				<!-- a class named .college-field is added in this div -->
+										<div class="ui form college-field">
 											<div class="field">
 											    <label>Dental College</label>
-											    <select id="dental-college-name" class="ui search dropdown">
+											    <!-- Required attribute is added -->
+											    <select id="dental-college-name" class="ui search dropdown" required>
 											        <option value="">Tap Here to Select</option>
 							                        <option value="Bangladesh Dental College">Bangladesh Dental College</option>
 							                        <option value="Chittagong International Dental College">Chittagong International Dental College</option>
@@ -231,10 +239,13 @@
 				        			</div>
 
 				        			<div class="col l4 m4">
-				        				<div class="ui form">
+				        				<!-- a class named .hsc-field is added in this div -->
+				        				<div class="ui form hsc-field">
 											<div class="field">
 											    <label>HSC Year</label>
-											    <input id="hsc-year" type="number" min="1900" name="">
+											    <!-- min value is changed -->
+											    <!-- Required attribute is added -->
+											    <input id="hsc-year" type="number" min="1950" name="" required>
 							                    
 											</div>
 										</div>
@@ -249,7 +260,8 @@
 											<div class="field ms-field degree-field">
 											    <label>Degrees</label>
 											    <i class='dropdown icon'></i>
-											    <select id="degrees" multiple="multiple">
+											    <!-- Required attribute is added -->
+											    <select id="degrees" multiple="multiple" required>
 												    <option value="BDS.">BDS.</option>
 												    <option value="MD.">MD.</option>
 												    <option value="DDS.">DDS.</option>
@@ -268,7 +280,7 @@
 											<div class="field">
 											    <label>Batch</label>
 												<select id="batch" class="ui search dropdown" name="batch" required="">
-											    	<option value="None">None</option>
+											    	<!-- remove the none --- option <option value="None">None</option> --- -->
 	                                                <option value="1 th">1 </option>
 	                                                <option value="2 th">2 </option>
 	                                                <option value="3 th">3 </option>
@@ -362,7 +374,8 @@
 
 				        		<div class="row">
 				        			
-				        			<div class="col l8 m8">
+				        			<!-- class will be l6 m6 insted of l8 m8 -->
+				        			<div class="col l6 m6">
 										<div class="ui form">
 											<div class="field ms-field fcps-degree-field">
 											    <label>FCPS. (Optional)</label>
@@ -377,11 +390,27 @@
 										</div>
 				        			</div>
 
-				        			<div class="col l4 m4">
-				        				<div class="ui form">
+									<!-- the following div is changed... Copy and paste it to overwrite the div in old file -->
+				        			<div class="col l6 m6">
+				        				<!-- a class named .bmdc-field is added -->
+				        				<div class="ui form bmdc-field">
 											<div class="field">
 											    <label>BMDC Reg. No.</label>
-											    <input id="bmdc-reg-no" type="number" name="">
+
+						        				<div class="ui right labeled input">
+													
+												    <!-- input attributes are changed -->
+												    <input id="bmdc-reg-no" type="text" name="" pattern="[0-9]{4,5}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+													<div class="ui dropdown label">
+													    <div class="text">Temporary</div>
+													    <i class="dropdown icon"></i>
+													    <div class="menu">
+													        <div class="item">Temporary</div>
+													        <div class="item">Permanent</div>
+													    </div>
+													</div>
+
+												</div>
 							                    
 											</div>
 										</div>
@@ -406,7 +435,8 @@
 				        		<div class="row">
 				        			
 				        			<div class="col l8 m8">
-										<div class="ui form">
+				        				<!-- a class named .academic-rank-field is added in this div -->
+										<div class="ui form academic-rank-field">
 											<div class="field">
 											    <label>Academic Rank</label>
 											    <select id="academic-rank" class="ui search dropdown" name="academic_rank" required>
@@ -511,10 +541,12 @@
 				        		<div class="row">
 				        			
 				        			<div class="col l12 m12">
-										<div class="ui form">
+				        				<!-- a class named .appointment-contact-field is added in this div -->
+										<div class="ui form appointment-contact-field">
 										  <div class="field">
 										    <label>Phone no. for Appointment</label>
-										    <input id="appointment-contact" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" pattern="[0-9]{11}" required title="Only Digits are allowed and should be 11 digits">
+										    <!-- Title is removed -->
+										    <input id="appointment-contact" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" pattern="[0-9]{11}" required>
 										  </div>
 										</div>
 				        			</div>
@@ -524,12 +556,13 @@
 				        		<div class="row">
 				        			
 				        			<div class="col l12 m12">
-				        				
-				        				<div class="ui form">
+				        				<!-- a class named .consult-fee-field is added in this div -->
+				        				<div class="ui form consult-fee-field">
 											<div class="field">
 
 											    <label>Consultation Fees (in Taka)</label>
-											    <input id="consult-fee" type="number" min="100" step="50" name="">
+											    <!-- required attribute is added -->
+											    <input id="consult-fee" type="number" min="100" step="50" name="" required>
 							                    
 											</div>
 										</div>
@@ -567,10 +600,12 @@
 					        		<div class="row">
 					        			
 					        			<div class="col l12 m12">
-											<div class="ui form first">
+					        				<!-- a class named .workplace-name-field is added -->
+											<div class="ui form first workplace-name-field">
 												<div class="field">
 													<label>Workplace Name</label>
-													<input type="text" name="">
+													<!-- id and required and some other attribute is added -->
+													<input id="workplace-name" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
 												</div>
 											</div>
 					        			</div>
@@ -580,10 +615,12 @@
 					        		<div class="row">
 					        			
 					        			<div class="col l12 m12">
-											<div class="ui form">
+					        				<!-- a class named .workplace-addr-field is added -->
+											<div class="ui form workplace-addr-field">
 												<div class="field">
-													<label> <i class="fas fa-search"></i> Workplace Address</label>
-													<input type="text" name="" placeholder=" Type Here to Search">
+													<label> Workplace Address</label>
+													<!-- some attribute is added -->
+													<input id="workplace-addr" type="text" name="" placeholder="Type Here to Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
 												</div>
 											</div>
 					        			</div>
@@ -593,19 +630,23 @@
 					        		<div class="row">
 					        			
 					        			<div class="col l6 m6">
-											<div class="ui form">
+											<!-- a class named .house-addr-field is added -->
+											<div class="ui form house-addr-field">
 												<div class="field">
-													<label>House Address</label>
-													<input type="text" name="">
+													<label> House Address</label>
+													<!-- some attribute is added -->
+													<input id="house-addr" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
 												</div>
 											</div>
 					        			</div>
 
 					        			<div class="col l6 m6">
-											<div class="ui form">
+											<!-- a class named .road-field is added -->
+											<div class="ui form road-field">
 												<div class="field">
-													<label>Road</label>
-													<input type="text" name="">
+													<label> Road</label>
+													<!-- some attribute is added -->
+													<input id="road" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
 												</div>
 											</div>
 					        			</div>
@@ -615,11 +656,13 @@
 					        		<div class="row">
 					        			
 					        			<div class="col l6 m6">
-					        				<div class="ui form">
+					        				<!-- a class named .thana-field is added -->
+					        				<div class="ui form thana-field">
 												<div class="field">
 												    <label>Thana</label>
 												    <select id="thana" class="ui upward search dropdown" name="thana" required="">
-												    	<option>Tap Here to Select</option>
+												    	<!-- Null value attribute is added to the first option -->
+												    	<option value="">Tap Here to Select</option>
 		                                                <option value="Adabor Thana">Adabor Thana</option>
 		                                                <option value="Badda Thana">Badda Thana</option>
 		                                                <option value="Bangsal Thana">Bangsal Thana</option>
@@ -714,10 +757,12 @@
 					        		<div class="row">
 					        			
 					        			<div class="col l12 m12">
-											<div class="ui form first">
+					        				<!-- a class named .workplace-name-field is added -->
+											<div class="ui form first workplace-name-field">
 												<div class="field">
 													<label>Workplace Name</label>
-													<input type="text" name="">
+													<!-- id and required and some other attribute is added -->
+													<input id="workplace-name" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 												</div>
 											</div>
 					        			</div>
@@ -727,10 +772,12 @@
 					        		<div class="row">
 					        			
 					        			<div class="col l12 m12">
-											<div class="ui form">
+					        				<!-- a class named .workplace-addr-field is added -->
+											<div class="ui form workplace-addr-field">
 												<div class="field">
-													<label> <i class="fas fa-search"></i> Workplace Address</label>
-													<input type="text" name="" placeholder=" Type Here to Search" >
+													<label> Workplace Address</label>
+													<!-- some attribute is added -->
+													<input id="workplace-addr" type="text" name="" placeholder="Type Here to Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 												</div>
 											</div>
 					        			</div>
@@ -859,10 +906,12 @@
 					        		<div class="row">
 					        			
 					        			<div class="col l12 m12">
-											<div class="ui form first">
+					        				<!-- a class named .workplace-name-field is added -->
+											<div class="ui form first workplace-name-field">
 												<div class="field">
 													<label>Workplace Name</label>
-													<input type="text" name="">
+													<!-- id and required and some other attribute is added -->
+													<input id="workplace-name" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 												</div>
 											</div>
 					        			</div>
@@ -872,10 +921,12 @@
 					        		<div class="row">
 					        			
 					        			<div class="col l12 m12">
-											<div class="ui form">
+					        				<!-- a class named .workplace-addr-field is added -->
+											<div class="ui form workplace-addr-field">
 												<div class="field">
-													<label> <i class="fas fa-search"></i> Workplace Address</label>
-													<input type="text" name="" placeholder=" Type Here to Search" >
+													<label> Workplace Address</label>
+													<!-- some attribute is added -->
+													<input id="workplace-addr" type="text" name="" placeholder="Type Here to Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 												</div>
 											</div>
 					        			</div>
@@ -1008,9 +1059,10 @@
 				        <span class="step-counter"> Step 5/5 </span>
   
 						<ul class="tabs group service-tab">
-						    <li><a class="active" href="#/one">Services 1</a></li>
-						    <li><a href="#/two">Services 2</a></li>
-						    <li><a href="#/three">Feedback</a></li>
+							<!-- Id is added to following three li -->
+						    <li><a id="service-tab-1" class="active" href="#/one">Services 1</a></li>
+						    <li><a id="service-tab-2" href="#/two">Services 2</a></li>
+						    <li><a id="service-tab-3" href="#/three">Feedback</a></li>
 						</ul>
 
 				        <div id="content" class="form-field-holder">
@@ -1330,8 +1382,13 @@
 				    </div>
 
 				</div>
+				
+				<!-- service-next and service-prev buttons are added -->
+				<button id="service-next" type='button' class='waves-effect waves-dark btn next' style="display: none;"><i class='chevron right icon'></i>Next </button>
+				<button id="service-prev" type='button' class='waves-effect waves-dark btn prev' style="display: none;"><i class='chevron left icon'></i>Back </button>
 
-				<button type='button' class='waves-effect waves-dark btn next' id="finishBtn"><i class='check right icon' style='color: #40b97d'></i></i><span style='color: #40b97d'>Finish</span></button>
+				<!-- type is changed -->
+				<button type='submit' class='waves-effect waves-dark btn next' id="finishBtn"><i class='check right icon' style='color: #40b97d'></i></i><span style='color: #40b97d'>Finish</span></button>
 				
 			</form>
 		</div>
@@ -1351,28 +1408,6 @@
 	<script type="text/javascript" src="js/frameworks/semantic.js"></script>
 	<script type="text/javascript" src="js/frameworks/multiple-select.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-
-	<script type="text/javascript">
-
-		document.onkeydown = function(e) {
-			if(event.keyCode == 123) {
-			return false;
-			}
-			if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-			return false;
-			}
-			if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
-			return false;
-			}
-			if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-			return false;
-			}
-			if(e.ctrlKey && e.keyCode == 'J'.charCodeAt(0)){
-			return false;
-			}
-		}
-		
-	</script>
 	
 </body>
 </html>
