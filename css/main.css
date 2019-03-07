@@ -615,7 +615,7 @@ body ::-webkit-scrollbar-thumb {
           padding: 1.2vh 1vw;
           background-color: #ebebeb; }
           #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .bmdc-field .label .text {
-            font-size: .8vw; }
+            font-size: 1vw; }
           #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .bmdc-field .label i {
             margin-left: .4vw; }
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .bmdc-field .dropdown .item:hover {
