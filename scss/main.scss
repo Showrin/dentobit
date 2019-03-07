@@ -824,10 +824,14 @@ body ::-webkit-scrollbar-thumb {
 								border-bottom-right-radius: 12px !important;
 								line-height: unset;
 								padding: 1.2vh 1vw;
-								background-color: #cac5c5;
+								background-color: #ebebeb;
 
 								.text {
 									font-size: .8vw;
+								}
+
+								i {
+									margin-left: .4vw;
 								}
 							}
 
