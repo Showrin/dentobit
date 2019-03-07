@@ -208,6 +208,17 @@ body ::-webkit-scrollbar-thumb {
         -webkit-transition: padding 0.2s ease, margin 0.2s ease;
         -o-transition: padding 0.2s ease, margin 0.2s ease;
         transition: padding 0.2s ease, margin 0.2s ease; }
+        #total-form-div #dynamic-form-area .form-stepper .step ul.tabs li a span {
+          float: right;
+          margin-right: 1vw;
+          height: 1.3vw;
+          width: 1.3vw;
+          color: #fff;
+          border-radius: 50%;
+          background-color: #dc4e41;
+          opacity: .5;
+          font-size: .9vw;
+          padding-top: .1vw; }
       #total-form-div #dynamic-form-area .form-stepper .step .tabs li:first-child a {
         z-index: 3;
         border-top-left-radius: 8px; }
@@ -230,6 +241,8 @@ body ::-webkit-scrollbar-thumb {
         outline: none;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px; }
+        #total-form-div #dynamic-form-area .form-stepper .step ul.tabs li a.active span {
+          opacity: 1; }
       #total-form-div #dynamic-form-area .form-stepper .step .group:before,
       #total-form-div #dynamic-form-area .form-stepper .step .group:after {
         content: " ";

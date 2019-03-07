@@ -253,6 +253,7 @@ body ::-webkit-scrollbar-thumb {
 				ul.tabs li {	
 					float: left;
 					width: 12.34vw;
+
 				}
 
 				ul.tabs li a {
@@ -269,6 +270,19 @@ body ::-webkit-scrollbar-thumb {
 					border-top-right-radius: 8px;
 					border: 0px solid #000000;
 					transition: padding 0.2s ease, margin 0.2s ease;
+
+					span {
+						float: right;
+						margin-right: 1vw;
+						height: 1.3vw;
+						width: 1.3vw;
+						color: #fff;
+						border-radius: 50%;
+						background-color: #dc4e41;
+						opacity: .5;
+						font-size: .9vw;
+						padding-top: .1vw;
+					}
 				}
 
 				.tabs li:first-child a {
@@ -300,6 +314,11 @@ body ::-webkit-scrollbar-thumb {
 					outline: none;
 					border-top-left-radius: 8px;
 					border-top-right-radius: 8px;
+
+					span {
+						opacity: 1;
+					}
+
 				}
 
 				.group:before,

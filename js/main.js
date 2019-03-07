@@ -16,246 +16,246 @@ $(document).ready(function() {
             var currentSlide = instance.$slides.eq(currentSlide);
             var clickedIndex = $('.slick-active').attr("data-slick-index");
 
-            if (clickedIndex == 0) {
+    //         if (clickedIndex == 0) {
             	
-            	var proPic = currentSlide.find("#pro-pic-input");
-            	var name = currentSlide.find("#full-name");
-            	var contact = currentSlide.find("#contact");
-            	var email = currentSlide.find("#email");
+    //         	var proPic = currentSlide.find("#pro-pic-input");
+    //         	var name = currentSlide.find("#full-name");
+    //         	var contact = currentSlide.find("#contact");
+    //         	var email = currentSlide.find("#email");
             
-	 			if (!proPic[0].validity.valid) {
+	 		// 	if (!proPic[0].validity.valid) {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("Please Upload Your Image");
-					formValidityChecker = false;
-					return false;
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("Please Upload Your Image");
+				// 	formValidityChecker = false;
+				// 	return false;
 
-				} else if (!name[0].validity.valid) {
+				// } else if (!name[0].validity.valid) {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-					var value = $('.name-field #full-name').val();
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+				// 	var value = $('.name-field #full-name').val();
 
-					if (value == "") {
-    					$('.name-field #full-name').attr("placeholder", "Please fill out the field");
-					} else {
-            			$('.name-field #full-name').val('');
-    					$('.name-field #full-name').attr("placeholder", "Only Alphabates are allowed");
-					}
+				// 	if (value == "") {
+    // 					$('.name-field #full-name').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.name-field #full-name').val('');
+    // 					$('.name-field #full-name').attr("placeholder", "Only Alphabates are allowed");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!contact[0].validity.valid) {
+				// } else if (!contact[0].validity.valid) {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-					var value = $('.contact-field #contact').val();
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+				// 	var value = $('.contact-field #contact').val();
 
-					if (value == "") {
-    					$('.contact-field #contact').attr("placeholder", "Please fill out the field");
-					} else {
-            			$('.contact-field #contact').val('');
-    					$('.contact-field #contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
-					}
+				// 	if (value == "") {
+    // 					$('.contact-field #contact').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.contact-field #contact').val('');
+    // 					$('.contact-field #contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!email[0].validity.valid) {
+				// } else if (!email[0].validity.valid) {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-					var value = $('.email-field #email').val();
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+				// 	var value = $('.email-field #email').val();
 
-					if (value == "") {
-    					$('.email-field #email').attr("placeholder", "Please fill out the field");
-					} else {
-            			$('.email-field #email').val('');
-    					$('.email-field #email').attr("placeholder", "Please give a valid email address");
-					}
+				// 	if (value == "") {
+    // 					$('.email-field #email').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.email-field #email').val('');
+    // 					$('.email-field #email').attr("placeholder", "Please give a valid email address");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else {
+				// } else {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-            		formValidityChecker = true;
-					return true;
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+    //         		formValidityChecker = true;
+				// 	return true;
 
-				}
+				// }
 
-            } else if (clickedIndex == 1) {
+    //         } else if (clickedIndex == 1) {
 
-            	var college = currentSlide.find("#dental-college-name");
-            	var hscYear = currentSlide.find("#hsc-year");
-    			var degrees = currentSlide.find("#degrees");
-    			var batch = currentSlide.find("#batch");
-    			var bmdc = currentSlide.find("#bmdc-reg-no");
+    //         	var college = currentSlide.find("#dental-college-name");
+    //         	var hscYear = currentSlide.find("#hsc-year");
+    // 			var degrees = currentSlide.find("#degrees");
+    // 			var batch = currentSlide.find("#batch");
+    // 			var bmdc = currentSlide.find("#bmdc-reg-no");
     			
 
-    			if (!college[0].validity.valid) {
+    // 			if (!college[0].validity.valid) {
 
-					var value = $('.college-field #dental-college-name').val();
+				// 	var value = $('.college-field #dental-college-name').val();
 
-					if (value == "") {
-    					$('.college-field .default').addClass('error').text("Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					$('.college-field .default').addClass('error').text("Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!hscYear[0].validity.valid) {
+				// } else if (!hscYear[0].validity.valid) {
 
-					var value = $('.hsc-field #hsc-year').val();
-					var hscYear = document.getElementById('hsc-year');
-					var currentYear = (new Date()).getFullYear();
+				// 	var value = $('.hsc-field #hsc-year').val();
+				// 	var hscYear = document.getElementById('hsc-year');
+				// 	var currentYear = (new Date()).getFullYear();
 
-					if (value < 1950) {
-    					$('.hsc-field #hsc-year').val(1950);
-					} else {
-            			$('.hsc-field #hsc-year').val(currentYear);
-					}
+				// 	if (value < 1950) {
+    // 					$('.hsc-field #hsc-year').val(1950);
+				// 	} else {
+    //         			$('.hsc-field #hsc-year').val(currentYear);
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!degrees[0].validity.valid) {
+				// } else if (!degrees[0].validity.valid) {
 
-    				$('.degree-field .placeholder').addClass("error").text("Please Choose at least one");
-            		formValidityChecker = false;
-            		return false;
+    // 				$('.degree-field .placeholder').addClass("error").text("Please Choose at least one");
+    //         		formValidityChecker = false;
+    //         		return false;
 
-            	} else if (!bmdc[0].validity.valid) {
+    //         	} else if (!bmdc[0].validity.valid) {
 
-            		$('.bmdc-field #bmdc-reg-no').val('');
-     				$('.bmdc-field #bmdc-reg-no').attr("placeholder", "Should be 4-5 digits");
-     				formValidityChecker = false;
-     				return false;
-            	} else {
-            		formValidityChecker = true;
-            		return true;
-            	}
+    //         		$('.bmdc-field #bmdc-reg-no').val('');
+    //  				$('.bmdc-field #bmdc-reg-no').attr("placeholder", "Should be 4-5 digits");
+    //  				formValidityChecker = false;
+    //  				return false;
+    //         	} else {
+    //         		formValidityChecker = true;
+    //         		return true;
+    //         	}
 
-            } else if (clickedIndex == 2) {
+    //         } else if (clickedIndex == 2) {
 
-            	var academicRank = currentSlide.find('#academic-rank');
-            	var appointmentContact = currentSlide.find('#appointment-contact');
-            	var consultFee = currentSlide.find('#consult-fee');
+    //         	var academicRank = currentSlide.find('#academic-rank');
+    //         	var appointmentContact = currentSlide.find('#appointment-contact');
+    //         	var consultFee = currentSlide.find('#consult-fee');
 
-            	if (!academicRank[0].validity.valid) {
+    //         	if (!academicRank[0].validity.valid) {
 
-					var value = $('.academic-rank-field #academic-rank').val();
+				// 	var value = $('.academic-rank-field #academic-rank').val();
 
-					if (value == "") {
-    					$('.academic-rank-field .default').addClass('error').text("Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					$('.academic-rank-field .default').addClass('error').text("Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!appointmentContact[0].validity.valid) {
+				// } else if (!appointmentContact[0].validity.valid) {
 
-					var value = $('.appointment-contact-field #appointment-contact').val();
+				// 	var value = $('.appointment-contact-field #appointment-contact').val();
 
-					if (value == "") {
-    					$('.appointment-contact-field #appointment-contact').attr("placeholder", "Please fill out the field");
-					} else {
-            			$('.appointment-contact-field #appointment-contact').val('');
-    					$('.appointment-contact-field #appointment-contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
-					}
+				// 	if (value == "") {
+    // 					$('.appointment-contact-field #appointment-contact').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.appointment-contact-field #appointment-contact').val('');
+    // 					$('.appointment-contact-field #appointment-contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!consultFee[0].validity.valid) {
+				// } else if (!consultFee[0].validity.valid) {
 
-					var value = $('.consult-fee-field #consult-fee').val();
+				// 	var value = $('.consult-fee-field #consult-fee').val();
 
-					if (value == "") {
-    					$('.consult-fee-field #consult-fee').attr("placeholder", "Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					$('.consult-fee-field #consult-fee').attr("placeholder", "Please fill out the field");
+				// 	}
 
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else {
-            		formValidityChecker = true;
-            		return true;
-            	}
+				// } else {
+    //         		formValidityChecker = true;
+    //         		return true;
+    //         	}
 
-            } else if (clickedIndex == 3) {
+    //         } else if (clickedIndex == 3) {
 
-            	var workplaceName_1 = currentSlide.find('#work-one .workplace-name-field #workplace-name');
-            	var workplaceAddr_1 = currentSlide.find('#work-one .workplace-addr-field #workplace-addr');
-            	var houseAddr_1 = currentSlide.find('#work-one .house-addr-field #house-addr');
-            	var road_1 = currentSlide.find('#work-one .road-field #road');
-            	var thana_1 = currentSlide.find('#work-one .thana-field #thana');
+    //         	var workplaceName_1 = currentSlide.find('#work-one .workplace-name-field #workplace-name');
+    //         	var workplaceAddr_1 = currentSlide.find('#work-one .workplace-addr-field #workplace-addr');
+    //         	var houseAddr_1 = currentSlide.find('#work-one .house-addr-field #house-addr');
+    //         	var road_1 = currentSlide.find('#work-one .road-field #road');
+    //         	var thana_1 = currentSlide.find('#work-one .thana-field #thana');
 
 
-            	if (!workplaceName_1[0].validity.valid) {
+    //         	if (!workplaceName_1[0].validity.valid) {
 
-					var value = workplaceName_1.val();
+				// 	var value = workplaceName_1.val();
 
-					if (value == "") {
-    					workplaceName_1.attr("placeholder", "Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					workplaceName_1.attr("placeholder", "Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!workplaceAddr_1[0].validity.valid) {
+				// } else if (!workplaceAddr_1[0].validity.valid) {
 
-					var value = workplaceAddr_1.val();
+				// 	var value = workplaceAddr_1.val();
 
-					if (value == "") {
-    					$('#work-one .workplace-addr-field').addClass('red-placeholder');
-    					workplaceAddr_1.attr("placeholder", "Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					$('#work-one .workplace-addr-field').addClass('red-placeholder');
+    // 					workplaceAddr_1.attr("placeholder", "Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!houseAddr_1[0].validity.valid) {
+				// } else if (!houseAddr_1[0].validity.valid) {
 
-					var value = houseAddr_1.val();
+				// 	var value = houseAddr_1.val();
 
-					if (value == "") {
-    					houseAddr_1.attr("placeholder", "Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					houseAddr_1.attr("placeholder", "Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!road_1[0].validity.valid) {
+				// } else if (!road_1[0].validity.valid) {
 
-					var value = road_1.val();
+				// 	var value = road_1.val();
 
-					if (value == "") {
-    					road_1.attr("placeholder", "Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					road_1.attr("placeholder", "Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!thana_1[0].validity.valid) {
+				// } else if (!thana_1[0].validity.valid) {
 
-					var value = thana_1.val();
+				// 	var value = thana_1.val();
 
-					if (value == "") {
-    					$('.thana-field .default').addClass('error').text("Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					$('.thana-field .default').addClass('error').text("Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else {
-            		formValidityChecker = true;
-            		return true;
+				// } else {
+    //         		formValidityChecker = true;
+    //         		return true;
 
-				}
+				// }
 
-            } else {
-            	formValidityChecker = true;
-            	return true;
-            }
+    //         } else {
+    //         	formValidityChecker = true;
+    //         	return true;
+    //         }
 
             formValidityChecker = true;
             return true;
@@ -348,10 +348,36 @@ function addTab(input) {
 
 	if (input.id == "add-btn-1") {
 		$('#work-tab-2').fadeIn(200);
+		$('#work-tab-2').trigger("click");
 	} else if (input.id == "add-btn-2") {
 		$('#work-tab-3').fadeIn(200);
+		$('#work-tab-3').trigger("click");
 	}
 }
+
+
+$('#remove-tab-2').click(function(e){
+		e.stopPropagation();
+		$('#work-tab-2').fadeOut(200);
+		$('#work-tab-1').trigger("click");
+});
+
+$('#remove-tab-3').click(function(e){
+		e.stopPropagation();
+		$('#work-tab-3').fadeOut(200);
+
+		if ($('#work-tab-2').css("display") == "block") {
+			
+			$('#work-tab-2').trigger("click");
+
+		} else {
+
+			$('#work-tab-1').trigger("click");
+
+		}
+});
+
+
 
 
 $('#degrees').multipleSelect({
