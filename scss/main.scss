@@ -150,6 +150,11 @@ body ::-webkit-scrollbar-thumb {
 			.btn:hover {
 				color: #fff;
 			}
+
+			#back-list-btn {
+				display: none;
+				width: 6.1vw;
+			}
 		}
 	}
 
@@ -158,6 +163,82 @@ body ::-webkit-scrollbar-thumb {
 		width: 68.6%;
 		height: inherit;
 		float: right;
+
+	
+		
+		#dr-list-body {
+			display: none;
+			width: auto;
+			height: 66vh;
+			background-color: #fff;
+			border-radius: 10px;
+			margin-top: 7vh;
+			margin-left: 3.54vw;
+			margin-right: 3.54vw;
+			overflow-x: hidden;
+			overflow-y: scroll;
+
+			.slot {
+				display: flex;
+				height: 13vh;
+				border-bottom: solid 2px rgba(112,112,112,.1);
+
+				.info-holder {
+					margin: auto;
+					height: 7vh;
+					width: 100%;
+					background-color: #fff;
+
+					.serial {
+						color: #3E3E3E;
+						font-size: 1.2vw;
+						display: inline-block;
+						width: 12%;
+						height: inherit;
+						vertical-align: top;
+						margin-left: 1vw;
+
+						span {
+							line-height: 7vh;
+							display: block;
+							width: 100%;
+							text-align: center;
+						}
+					}
+
+					img {
+						height: 7vh;
+						width: 7vh;
+						box-shadow: 0px 14px 21px rgba(0, 0, 0, .16);
+					}
+
+					.name-desig {
+						width: 70%;
+						color: #3E3E3E;
+						display: inline-block;
+						width: 70%;
+						height: inherit;
+						vertical-align: top;
+						margin-left: 2vw;
+
+						.dr-name {
+							font-size: 1vw;
+							display: block;
+							letter-spacing: .05vw;
+							margin-top: 1vh;
+						}
+
+						.dr-desig {
+							display: block;
+							letter-spacing: .05vw;
+							margin-top: .4vh;
+						}
+					}
+				}
+			}
+		}
+
+
 
 		form {
 			height: inherit;

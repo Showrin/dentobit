@@ -379,6 +379,25 @@ $('#remove-tab-3').click(function(e){
 
 
 
+$("#full-list-btn").click(function() {
+
+	$("#dynamic-form-area form").hide();
+	$("#dynamic-form-area #dr-list-body").fadeIn(200);
+	$("#full-list-btn").hide();
+	$("#back-list-btn").fadeIn(200);
+
+});
+
+$("#back-list-btn").click(function() {
+
+	$("#dynamic-form-area #dr-list-body").hide();
+	$("#dynamic-form-area form").fadeIn(200);
+	$("#back-list-btn").hide();
+	$("#full-list-btn").fadeIn(200);
+
+});
+
+
 
 $('#degrees').multipleSelect({
 	placeholder: "Tap Here to Select"

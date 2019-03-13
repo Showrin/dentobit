@@ -111,11 +111,71 @@ body ::-webkit-scrollbar-thumb {
         padding: .9vh 1vw; }
       #total-form-div #static-form-area #listed-doctors .btn:hover {
         color: #fff; }
+      #total-form-div #static-form-area #listed-doctors #back-list-btn {
+        display: none;
+        width: 6.1vw; }
   #total-form-div #dynamic-form-area {
     background-color: rgba(86, 128, 213, 0.81);
     width: 68.6%;
     height: inherit;
     float: right; }
+    #total-form-div #dynamic-form-area #dr-list-body {
+      display: none;
+      width: auto;
+      height: 66vh;
+      background-color: #fff;
+      border-radius: 10px;
+      margin-top: 7vh;
+      margin-left: 3.54vw;
+      margin-right: 3.54vw;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+      #total-form-div #dynamic-form-area #dr-list-body .slot {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 13vh;
+        border-bottom: solid 2px rgba(112, 112, 112, 0.1); }
+        #total-form-div #dynamic-form-area #dr-list-body .slot .info-holder {
+          margin: auto;
+          height: 7vh;
+          width: 100%;
+          background-color: #fff; }
+          #total-form-div #dynamic-form-area #dr-list-body .slot .info-holder .serial {
+            color: #3E3E3E;
+            font-size: 1.2vw;
+            display: inline-block;
+            width: 12%;
+            height: inherit;
+            vertical-align: top;
+            margin-left: 1vw; }
+            #total-form-div #dynamic-form-area #dr-list-body .slot .info-holder .serial span {
+              line-height: 7vh;
+              display: block;
+              width: 100%;
+              text-align: center; }
+          #total-form-div #dynamic-form-area #dr-list-body .slot .info-holder img {
+            height: 7vh;
+            width: 7vh;
+            -webkit-box-shadow: 0px 14px 21px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 14px 21px rgba(0, 0, 0, 0.16); }
+          #total-form-div #dynamic-form-area #dr-list-body .slot .info-holder .name-desig {
+            width: 70%;
+            color: #3E3E3E;
+            display: inline-block;
+            width: 70%;
+            height: inherit;
+            vertical-align: top;
+            margin-left: 2vw; }
+            #total-form-div #dynamic-form-area #dr-list-body .slot .info-holder .name-desig .dr-name {
+              font-size: 1vw;
+              display: block;
+              letter-spacing: .05vw;
+              margin-top: 1vh; }
+            #total-form-div #dynamic-form-area #dr-list-body .slot .info-holder .name-desig .dr-desig {
+              display: block;
+              letter-spacing: .05vw;
+              margin-top: .4vh; }
     #total-form-div #dynamic-form-area form {
       height: inherit; }
       #total-form-div #dynamic-form-area form .prev {
