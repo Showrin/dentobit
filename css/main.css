@@ -131,7 +131,7 @@ body ::-webkit-scrollbar-thumb {
       overflow-x: hidden;
       overflow-y: scroll; }
       #total-form-div #dynamic-form-area #dr-list-body .slot-title {
-        font-size: 2vw;
+        font-size: 1.6vw;
         margin: 3vh 0 1vh 3vw;
         font-weight: 700;
         color: #3e3e3e;
@@ -329,8 +329,6 @@ body ::-webkit-scrollbar-thumb {
           margin-top: 2vh; }
         #total-form-div #dynamic-form-area .form-stepper .step #content #two .form, #total-form-div #dynamic-form-area .form-stepper .step #work-content #two .form {
           margin-top: 3.5vh; }
-        #total-form-div #dynamic-form-area .form-stepper .step #content #two .service-field-2-5, #total-form-div #dynamic-form-area .form-stepper .step #work-content #two .service-field-2-5 {
-          margin-top: 5vh; }
         #total-form-div #dynamic-form-area .form-stepper .step #content #three .form, #total-form-div #dynamic-form-area .form-stepper .step #work-content #three .form {
           margin-top: 4vh; }
         #total-form-div #dynamic-form-area .form-stepper .step #content #three textarea, #total-form-div #dynamic-form-area .form-stepper .step #work-content #three textarea {
@@ -567,7 +565,7 @@ body ::-webkit-scrollbar-thumb {
             padding-top: 0;
             padding-bottom: 0;
             font-size: 1.2vw;
-            color: #7a7a7a;
+            color: #343434;
             letter-spacing: 0.08vw;
             font-weight: normal;
             line-height: 5.09vh;
@@ -587,7 +585,7 @@ body ::-webkit-scrollbar-thumb {
             background-color: #ebebeb;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
-            font-size: 1.2vw;
+            font-size: .9vw;
             color: #7a7a7a;
             letter-spacing: 0.08vw;
             line-height: 5.09vh;
@@ -615,7 +613,7 @@ body ::-webkit-scrollbar-thumb {
               margin: .8vh 0.2vw;
               margin-top: 0;
               font-size: 1.2vw;
-              color: #7a7a7a;
+              color: #343434;
               letter-spacing: 0.08vw;
               font-weight: normal; }
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .row {
@@ -699,7 +697,8 @@ body ::-webkit-scrollbar-thumb {
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .service-field-2-2 li,
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .service-field-2-3 li,
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .service-field-2-4 li,
-        #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .service-field-2-5 li {
+        #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .service-ifeld-2-5 li,
+        #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .service-ifeld-2-6 li {
           width: 100%; }
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .form {
           margin-top: 2.8vh; }
@@ -820,7 +819,7 @@ body ::-webkit-scrollbar-thumb {
             margin: 1vh 0.2vw;
             margin-top: 0;
             font-size: 1.2vw;
-            color: #7a7a7a;
+            color: #343434;
             letter-spacing: 0.08vw;
             font-weight: normal; }
             #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .field label span {
@@ -830,4 +829,4 @@ body ::-webkit-scrollbar-thumb {
 .error {
   color: #dc4e41 !important;
   font-weight: bold;
-  font-size: 1vw; }
+  font-size: .9vw; }

@@ -179,7 +179,7 @@ body ::-webkit-scrollbar-thumb {
 			overflow-y: scroll;
 
 			.slot-title {
-				font-size: 2vw;
+				font-size: 1.6vw;
 				margin: 3vh 0 1vh 3vw;
 				font-weight: 700;
 				color: #3e3e3e;
@@ -440,9 +440,6 @@ body ::-webkit-scrollbar-thumb {
 							margin-top: 3.5vh;
 						}
 
-						.service-field-2-5 {
-							margin-top: 5vh;
-						}
 					}
 
 					#three {
@@ -727,7 +724,7 @@ body ::-webkit-scrollbar-thumb {
 							padding-top: 0;
 							padding-bottom: 0;
 							font-size: 1.2vw;
-							color: #7a7a7a;
+							color: #343434;
 							letter-spacing: 0.08vw;
 							font-weight: normal;
 							line-height: 5.09vh;
@@ -753,7 +750,7 @@ body ::-webkit-scrollbar-thumb {
 							background-color: #ebebeb;
 							border-top-left-radius: 0px;
 							border-bottom-left-radius: 0px;
-							font-size: 1.2vw;
+							font-size: .9vw;
 							color: #7a7a7a;
 							letter-spacing: 0.08vw;
 							line-height: 5.09vh;
@@ -792,7 +789,7 @@ body ::-webkit-scrollbar-thumb {
 								margin: .8vh 0.2vw;
 								margin-top: 0;
 								font-size: 1.2vw;
-								color: #7a7a7a;
+								color: #343434;
 								letter-spacing: 0.08vw;
 								font-weight: normal;
 							}
@@ -944,7 +941,8 @@ body ::-webkit-scrollbar-thumb {
 						.service-field-2-2,
 						.service-field-2-3,
 						.service-field-2-4,
-						.service-field-2-5 {
+						.service-ifeld-2-5,
+						.service-ifeld-2-6 {
 
 							li {
 								width: 100%;
@@ -1064,7 +1062,7 @@ body ::-webkit-scrollbar-thumb {
 								margin: 1vh 0.2vw;
 								margin-top: 0;
 								font-size: 1.2vw;
-								color: #7a7a7a;
+								color: #343434;
 								letter-spacing: 0.08vw;
 								font-weight: normal;
 
@@ -1084,5 +1082,5 @@ body ::-webkit-scrollbar-thumb {
 .error {
 	color: #dc4e41 !important;
 	font-weight: bold;
-	font-size: 1vw;
+	font-size: .9vw;
 }

@@ -470,6 +470,10 @@ $('#services-2-5').multipleSelect({
 	placeholder: "Tap Here to Select"
 });
 
+$('#services-2-6').multipleSelect({
+	position: "top",
+	placeholder: "Tap Here to Select"
+});
 
 
 
