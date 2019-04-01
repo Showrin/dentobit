@@ -435,23 +435,11 @@ body ::-webkit-scrollbar-thumb {
 						margin-top: 2vh;
 					}
 
-					#two {
+					#two, #three {
 						.form {
 							margin-top: 3.5vh;
 						}
 
-					}
-
-					#three {
-						.form {
-							margin-top: 4vh;
-						}
-
-						textarea {
-							height: 30vh !important;
-							resize: none;
-							margin-top: 2vh !important;
-						}
 					}
 
 					.first {
@@ -985,6 +973,20 @@ body ::-webkit-scrollbar-thumb {
 							color: #dc4e41 !important;
 							font-weight: bold !important;
 							font-size: 1vw;
+						}
+
+
+
+						#feedback {
+							.form {
+								margin-top: 5vh;
+							}
+
+							textarea {
+								height: 30vh !important;
+								resize: none;
+								margin-top: 2vh !important;
+							}
 						}
 
 						.workplace-addr-field {
