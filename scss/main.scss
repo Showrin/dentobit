@@ -152,7 +152,7 @@ body ::-webkit-scrollbar-thumb {
 			}
 
 			#back-list-btn {
-				display: none;
+				// display: none;
 				width: 6.1vw;
 			}
 		}
@@ -167,7 +167,7 @@ body ::-webkit-scrollbar-thumb {
 	
 		
 		#dr-list-body {
-			display: none;
+			// display: none;
 			width: auto;
 			height: 66vh;
 			background-color: #fff;
@@ -246,6 +246,52 @@ body ::-webkit-scrollbar-thumb {
 							margin-top: .4vh;
 						}
 					}
+				}
+			}
+		}
+
+
+		#success-body {
+			height: inherit;
+			width: 100%;
+			display: flex;
+			
+			#success-container {
+				margin: auto;
+				text-align: center;
+				width: 80%;
+				display: none;
+
+				#success-circle {
+
+					height: 8vw;
+					width: 8vw;
+					border-radius: 50%;
+					background-color: #fff;
+					display: flex;
+
+					.icon {
+						font-size: 6vw;
+						color: #40b97d;
+						margin: auto;
+					}
+				}
+
+				#success-msg {
+					font-size: 2vw;
+					letter-spacing: .1vw;
+					line-height: 3vw;
+					color: #fff;
+					margin-top: 3vh;
+				}
+
+				#goto-home-btn {
+					margin-top: 3vh;
+					background-color: #fff;
+					color: #40b97d;
+					font-weight: 600;
+					letter-spacing: .2vw;
+					border-radius: 5px;
 				}
 			}
 		}

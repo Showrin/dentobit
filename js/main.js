@@ -18,121 +18,121 @@ $(document).ready(function() {
 
             if (clickedIndex == 0) {
             	
-    //         	var proPic = currentSlide.find("#pro-pic-input");
-    //         	var name = currentSlide.find("#full-name");
-    //         	var contact = currentSlide.find("#contact");
-    //         	var email = currentSlide.find("#email");
+            	var proPic = currentSlide.find("#pro-pic-input");
+            	var name = currentSlide.find("#full-name");
+            	var contact = currentSlide.find("#contact");
+            	var email = currentSlide.find("#email");
             
-	 		// 	if (!proPic[0].validity.valid) {
+	 			if (!proPic[0].validity.valid) {
 
-				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("Please Upload Your Image");
-				// 	formValidityChecker = false;
-				// 	return false;
+					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("Please Upload Your Image");
+					formValidityChecker = false;
+					return false;
 
-				// } else if (!name[0].validity.valid) {
+				} else if (!name[0].validity.valid) {
 
-				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-				// 	var value = $('.name-field #full-name').val();
+					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+					var value = $('.name-field #full-name').val();
 
-				// 	if (value == "") {
-    // 					$('.name-field #full-name').attr("placeholder", "Please fill out the field");
-				// 	} else {
-    //         			$('.name-field #full-name').val('');
-    // 					$('.name-field #full-name').attr("placeholder", "Only Alphabates and dot(.) are allowed");
-				// 	}
+					if (value == "") {
+    					$('.name-field #full-name').attr("placeholder", "Please fill out the field");
+					} else {
+            			$('.name-field #full-name').val('');
+    					$('.name-field #full-name').attr("placeholder", "Only Alphabates and dot(.) are allowed");
+					}
             		
-    //         		formValidityChecker = false;
-				// 	return false;
+            		formValidityChecker = false;
+					return false;
 
-				// } else if (!contact[0].validity.valid) {
+				} else if (!contact[0].validity.valid) {
 
-				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-				// 	var value = $('.contact-field #contact').val();
+					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+					var value = $('.contact-field #contact').val();
 
-				// 	if (value == "") {
-    // 					$('.contact-field #contact').attr("placeholder", "Please fill out the field");
-				// 	} else {
-    //         			$('.contact-field #contact').val('');
-    // 					$('.contact-field #contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
-				// 	}
+					if (value == "") {
+    					$('.contact-field #contact').attr("placeholder", "Please fill out the field");
+					} else {
+            			$('.contact-field #contact').val('');
+    					$('.contact-field #contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
+					}
             		
-    //         		formValidityChecker = false;
-				// 	return false;
+            		formValidityChecker = false;
+					return false;
 
-				// } else if (!email[0].validity.valid) {
+				} else if (!email[0].validity.valid) {
 
-				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-				// 	var value = $('.email-field #email').val();
+					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+					var value = $('.email-field #email').val();
 
-				// 	if (value == "") {
-    // 					$('.email-field #email').attr("placeholder", "Please fill out the field");
-				// 	} else {
-    //         			$('.email-field #email').val('');
-    // 					$('.email-field #email').attr("placeholder", "Please give a valid email address");
-				// 	}
+					if (value == "") {
+    					$('.email-field #email').attr("placeholder", "Please fill out the field");
+					} else {
+            			$('.email-field #email').val('');
+    					$('.email-field #email').attr("placeholder", "Please give a valid email address");
+					}
             		
-    //         		formValidityChecker = false;
-				// 	return false;
+            		formValidityChecker = false;
+					return false;
 
-				// } else {
+				} else {
 
-				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-    //         		formValidityChecker = true;
-				// 	return true;
+					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+            		formValidityChecker = true;
+					return true;
 
-				// }
+				}
 
-    //         } else if (clickedIndex == 1) {
+            } else if (clickedIndex == 1) {
 
-    //         	var college = currentSlide.find("#dental-college-name");
-    //         	var hscYear = currentSlide.find("#hsc-year");
-    // 			var degrees = currentSlide.find("#degrees");
-    // 			var batch = currentSlide.find("#batch");
-    // 			var bmdc = currentSlide.find("#bmdc-reg-no");
+            	var college = currentSlide.find("#dental-college-name");
+            	var hscYear = currentSlide.find("#hsc-year");
+    			var degrees = currentSlide.find("#degrees");
+    			var batch = currentSlide.find("#batch");
+    			var bmdc = currentSlide.find("#bmdc-reg-no");
     			
 
-    // 			if (!college[0].validity.valid) {
+    			if (!college[0].validity.valid) {
 
-				// 	var value = $('.college-field #dental-college-name').val();
+					var value = $('.college-field #dental-college-name').val();
 
-				// 	if (value == "") {
-    // 					$('.college-field .default').addClass('error').text("Please fill out the field");
-				// 	}
+					if (value == "") {
+    					$('.college-field .default').addClass('error').text("Please fill out the field");
+					}
             		
-    //         		formValidityChecker = false;
-				// 	return false;
+            		formValidityChecker = false;
+					return false;
 
-				// } else if (!hscYear[0].validity.valid) {
+				} else if (!hscYear[0].validity.valid) {
 
-				// 	var value = $('.hsc-field #hsc-year').val();
-				// 	var hscYear = document.getElementById('hsc-year');
-				// 	var currentYear = (new Date()).getFullYear();
+					var value = $('.hsc-field #hsc-year').val();
+					var hscYear = document.getElementById('hsc-year');
+					var currentYear = (new Date()).getFullYear();
 
-				// 	if (value < 1950) {
-    // 					$('.hsc-field #hsc-year').val(1950);
-				// 	} else {
-    //         			$('.hsc-field #hsc-year').val(currentYear);
-				// 	}
+					if (value < 1950) {
+    					$('.hsc-field #hsc-year').val(1950);
+					} else {
+            			$('.hsc-field #hsc-year').val(currentYear);
+					}
             		
-    //         		formValidityChecker = false;
-				// 	return false;
+            		formValidityChecker = false;
+					return false;
 
-				// } else if (!degrees[0].validity.valid) {
+				} else if (!degrees[0].validity.valid) {
 
-    // 				$('.degree-field .placeholder').addClass("error").text("Please Choose at least one");
-    //         		formValidityChecker = false;
-    //         		return false;
+    				$('.degree-field .placeholder').addClass("error").text("Please Choose at least one");
+            		formValidityChecker = false;
+            		return false;
 
-    //         	} else if (!bmdc[0].validity.valid) {
+            	} else if (!bmdc[0].validity.valid) {
 
-    //         		$('.bmdc-field #bmdc-reg-no').val('');
-    //  				$('.bmdc-field #bmdc-reg-no').attr("placeholder", "Should be 4-5 digits");
-    //  				formValidityChecker = false;
-    //  				return false;
-    //         	} else {
-    //         		formValidityChecker = true;
-    //         		return true;
-    //         	}
+            		$('.bmdc-field #bmdc-reg-no').val('');
+     				$('.bmdc-field #bmdc-reg-no').attr("placeholder", "Should be 4-5 digits");
+     				formValidityChecker = false;
+     				return false;
+            	} else {
+            		formValidityChecker = true;
+            		return true;
+            	}
 
             } else if (clickedIndex == 2) {
 
@@ -349,9 +349,14 @@ $(document).ready(function() {
 	    } 
 	});
 
-	finishBtn.click(function(e) {
-		finishBtn.transition('shake');
-	});
+	// finishBtn.click(function(e) {
+	// 	finishBtn.transition('shake');
+	// });
+		
+
+	$(document).ready(function() {
+		$('#success-container').transition('zoom');
+	})
 
 	//script to remove error class from dental college field
 	$('.college-field .item').click( function(e) {
@@ -442,23 +447,23 @@ $('#remove-tab-3').click(function(e){
 
 
 
-$("#full-list-btn").click(function() {
+// $("#full-list-btn").click(function() {
 
-	$("#dynamic-form-area form").hide();
-	$("#dynamic-form-area #dr-list-body").fadeIn(200);
-	$("#full-list-btn").hide();
-	$("#back-list-btn").fadeIn(200);
+// 	$("#dynamic-form-area form").hide();
+// 	$("#dynamic-form-area #dr-list-body").fadeIn(200);
+// 	$("#full-list-btn").hide();
+// 	$("#back-list-btn").fadeIn(200);
 
-});
+// });
 
-$("#back-list-btn").click(function() {
+// $("#back-list-btn").click(function() {
 
-	$("#dynamic-form-area #dr-list-body").hide();
-	$("#dynamic-form-area form").fadeIn(200);
-	$("#back-list-btn").hide();
-	$("#full-list-btn").fadeIn(200);
+// 	$("#dynamic-form-area #dr-list-body").hide();
+// 	$("#dynamic-form-area form").fadeIn(200);
+// 	$("#back-list-btn").hide();
+// 	$("#full-list-btn").fadeIn(200);
 
-});
+// });
 
 
 
@@ -588,41 +593,41 @@ $('#services-2-6').multipleSelect({
 })(jQuery);
 
 
-(function($) {
+// (function($) {
 
-    var tabs = $(".workplace-tab li a");
+//     var tabs = $(".workplace-tab li a");
 
-    $("#work-content").find('#work-two').hide();
+//     $("#work-content").find('#work-two').hide();
 
-    $("#work-content").find('#work-three').hide();
+//     $("#work-content").find('#work-three').hide();
 
-    tabs.click(function() {
-        var content = this.hash.replace('/', '');
-        tabs.removeClass("active");
-        $(this).addClass("active");
+//     tabs.click(function() {
+//         var content = this.hash.replace('/', '');
+//         tabs.removeClass("active");
+//         $(this).addClass("active");
 
-        if (content == "#work-one") {
+//         if (content == "#work-one") {
 
-        	$("#work-content").find('#work-two').hide();
-        	$("#work-content").find('#work-three').hide();
-        	$(content).fadeIn(200);
+//         	$("#work-content").find('#work-two').hide();
+//         	$("#work-content").find('#work-three').hide();
+//         	$(content).fadeIn(200);
 
-        } else if (content == "#work-two") {
+//         } else if (content == "#work-two") {
 
-        	$("#work-content").find('#work-one').hide();
-        	$("#work-content").find('#work-three').hide();
-        	$(content).fadeIn(200);
+//         	$("#work-content").find('#work-one').hide();
+//         	$("#work-content").find('#work-three').hide();
+//         	$(content).fadeIn(200);
 
-        } else {
+//         } else {
 
-        	$("#work-content").find('#work-one').hide();
-        	$("#work-content").find('#work-two').hide();
-        	$(content).fadeIn(200);
+//         	$("#work-content").find('#work-one').hide();
+//         	$("#work-content").find('#work-two').hide();
+//         	$(content).fadeIn(200);
 
-        }
-    });
+//         }
+//     });
 
-})(jQuery);
+// })(jQuery);
 
 
 //script for service page step controlling
