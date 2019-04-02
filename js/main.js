@@ -18,129 +18,144 @@ $(document).ready(function() {
 
             if (clickedIndex == 0) {
             	
-            	var proPic = currentSlide.find("#pro-pic-input");
-            	var name = currentSlide.find("#full-name");
-            	var contact = currentSlide.find("#contact");
-            	var email = currentSlide.find("#email");
+    //         	var proPic = currentSlide.find("#pro-pic-input");
+    //         	var name = currentSlide.find("#full-name");
+    //         	var contact = currentSlide.find("#contact");
+    //         	var email = currentSlide.find("#email");
             
-	 			if (!proPic[0].validity.valid) {
+	 		// 	if (!proPic[0].validity.valid) {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("Please Upload Your Image");
-					formValidityChecker = false;
-					return false;
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("Please Upload Your Image");
+				// 	formValidityChecker = false;
+				// 	return false;
 
-				} else if (!name[0].validity.valid) {
+				// } else if (!name[0].validity.valid) {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-					var value = $('.name-field #full-name').val();
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+				// 	var value = $('.name-field #full-name').val();
 
-					if (value == "") {
-    					$('.name-field #full-name').attr("placeholder", "Please fill out the field");
-					} else {
-            			$('.name-field #full-name').val('');
-    					$('.name-field #full-name').attr("placeholder", "Only Alphabates are allowed");
-					}
+				// 	if (value == "") {
+    // 					$('.name-field #full-name').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.name-field #full-name').val('');
+    // 					$('.name-field #full-name').attr("placeholder", "Only Alphabates and dot(.) are allowed");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!contact[0].validity.valid) {
+				// } else if (!contact[0].validity.valid) {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-					var value = $('.contact-field #contact').val();
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+				// 	var value = $('.contact-field #contact').val();
 
-					if (value == "") {
-    					$('.contact-field #contact').attr("placeholder", "Please fill out the field");
-					} else {
-            			$('.contact-field #contact').val('');
-    					$('.contact-field #contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
-					}
+				// 	if (value == "") {
+    // 					$('.contact-field #contact').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.contact-field #contact').val('');
+    // 					$('.contact-field #contact').attr("placeholder", "Only Digits are allowed and should be 11 digits");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!email[0].validity.valid) {
+				// } else if (!email[0].validity.valid) {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-					var value = $('.email-field #email').val();
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+				// 	var value = $('.email-field #email').val();
 
-					if (value == "") {
-    					$('.email-field #email').attr("placeholder", "Please fill out the field");
-					} else {
-            			$('.email-field #email').val('');
-    					$('.email-field #email').attr("placeholder", "Please give a valid email address");
-					}
+				// 	if (value == "") {
+    // 					$('.email-field #email').attr("placeholder", "Please fill out the field");
+				// 	} else {
+    //         			$('.email-field #email').val('');
+    // 					$('.email-field #email').attr("placeholder", "Please give a valid email address");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else {
+				// } else {
 
-					$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
-            		formValidityChecker = true;
-					return true;
+				// 	$('#total-form-div #dynamic-form-area form .form-stepper .step .form-field-holder .row .col center .error-message').text("");
+    //         		formValidityChecker = true;
+				// 	return true;
 
-				}
+				// }
 
-            } else if (clickedIndex == 1) {
+    //         } else if (clickedIndex == 1) {
 
-            	var college = currentSlide.find("#dental-college-name");
-            	var hscYear = currentSlide.find("#hsc-year");
-    			var degrees = currentSlide.find("#degrees");
-    			var batch = currentSlide.find("#batch");
-    			var bmdc = currentSlide.find("#bmdc-reg-no");
+    //         	var college = currentSlide.find("#dental-college-name");
+    //         	var hscYear = currentSlide.find("#hsc-year");
+    // 			var degrees = currentSlide.find("#degrees");
+    // 			var batch = currentSlide.find("#batch");
+    // 			var bmdc = currentSlide.find("#bmdc-reg-no");
     			
 
-    			if (!college[0].validity.valid) {
+    // 			if (!college[0].validity.valid) {
 
-					var value = $('.college-field #dental-college-name').val();
+				// 	var value = $('.college-field #dental-college-name').val();
 
-					if (value == "") {
-    					$('.college-field .default').addClass('error').text("Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					$('.college-field .default').addClass('error').text("Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!hscYear[0].validity.valid) {
+				// } else if (!hscYear[0].validity.valid) {
 
-					var value = $('.hsc-field #hsc-year').val();
-					var hscYear = document.getElementById('hsc-year');
-					var currentYear = (new Date()).getFullYear();
+				// 	var value = $('.hsc-field #hsc-year').val();
+				// 	var hscYear = document.getElementById('hsc-year');
+				// 	var currentYear = (new Date()).getFullYear();
 
-					if (value < 1950) {
-    					$('.hsc-field #hsc-year').val(1950);
-					} else {
-            			$('.hsc-field #hsc-year').val(currentYear);
-					}
+				// 	if (value < 1950) {
+    // 					$('.hsc-field #hsc-year').val(1950);
+				// 	} else {
+    //         			$('.hsc-field #hsc-year').val(currentYear);
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!degrees[0].validity.valid) {
+				// } else if (!degrees[0].validity.valid) {
 
-    				$('.degree-field .placeholder').addClass("error").text("Please Choose at least one");
-            		formValidityChecker = false;
-            		return false;
+    // 				$('.degree-field .placeholder').addClass("error").text("Please Choose at least one");
+    //         		formValidityChecker = false;
+    //         		return false;
 
-            	} else if (!bmdc[0].validity.valid) {
+    //         	} else if (!bmdc[0].validity.valid) {
 
-            		$('.bmdc-field #bmdc-reg-no').val('');
-     				$('.bmdc-field #bmdc-reg-no').attr("placeholder", "Should be 4-5 digits");
-     				formValidityChecker = false;
-     				return false;
-            	} else {
-            		formValidityChecker = true;
-            		return true;
-            	}
+    //         		$('.bmdc-field #bmdc-reg-no').val('');
+    //  				$('.bmdc-field #bmdc-reg-no').attr("placeholder", "Should be 4-5 digits");
+    //  				formValidityChecker = false;
+    //  				return false;
+    //         	} else {
+    //         		formValidityChecker = true;
+    //         		return true;
+    //         	}
 
             } else if (clickedIndex == 2) {
 
+            	var nid = currentSlide.find('#nid');
             	var academicRank = currentSlide.find('#academic-rank');
             	var appointmentContact = currentSlide.find('#appointment-contact');
             	var consultFee = currentSlide.find('#consult-fee');
 
-            	if (!academicRank[0].validity.valid) {
+            	if (!nid[0].validity.valid) {
+
+					var value = $('.nid-field #nid').val();
+
+					if (value == "") {
+    					$('.nid-field #nid').attr("placeholder", "Please fill out the field");
+					} else {
+            			$('.nid-field #nid').val('');
+    					$('.nid-field #nid').attr("placeholder", "Only Digits are allowed");
+					}
+            		
+            		formValidityChecker = false;
+					return false;
+
+				} else if (!academicRank[0].validity.valid) {
 
 					var value = $('.academic-rank-field #academic-rank').val();
 
@@ -169,8 +184,12 @@ $(document).ready(function() {
 
 					var value = $('.consult-fee-field #consult-fee').val();
 
+
 					if (value == "") {
     					$('.consult-fee-field #consult-fee').attr("placeholder", "Please fill out the field");
+					} else {
+						$('.consult-fee-field #consult-fee').val('');
+						$('.consult-fee-field #consult-fee').attr("placeholder", "Only rounded values are acceptable");
 					}
 
             		formValidityChecker = false;
@@ -188,6 +207,8 @@ $(document).ready(function() {
             	var houseAddr_1 = currentSlide.find('#work-one .house-addr-field #house-addr');
             	var road_1 = currentSlide.find('#work-one .road-field #road');
             	var thana_1 = currentSlide.find('#work-one .thana-field #thana');
+            	var district = currentSlide.find('#work-one .district-field #district');
+            	var gmap_addr = currentSlide.find('#work-one .gmap-addr-field #gmap-addr');
 
 
             	if (!workplaceName_1[0].validity.valid) {
@@ -196,6 +217,17 @@ $(document).ready(function() {
 
 					if (value == "") {
     					workplaceName_1.attr("placeholder", "Please fill out the field");
+					}
+            		
+            		formValidityChecker = false;
+					return false;
+
+				} else if (!gmap_addr[0].validity.valid) {
+
+					var value = gmap_addr.val();
+
+					if (value == "") {
+    					gmap_addr.attr("placeholder", "Please fill out the field");
 					}
             		
             		formValidityChecker = false;
@@ -213,27 +245,27 @@ $(document).ready(function() {
             		formValidityChecker = false;
 					return false;
 
-				} else if (!houseAddr_1[0].validity.valid) {
+				// } else if (!houseAddr_1[0].validity.valid) {
 
-					var value = houseAddr_1.val();
+				// 	var value = houseAddr_1.val();
 
-					if (value == "") {
-    					houseAddr_1.attr("placeholder", "Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					houseAddr_1.attr("placeholder", "Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
-				} else if (!road_1[0].validity.valid) {
+				// } else if (!road_1[0].validity.valid) {
 
-					var value = road_1.val();
+				// 	var value = road_1.val();
 
-					if (value == "") {
-    					road_1.attr("placeholder", "Please fill out the field");
-					}
+				// 	if (value == "") {
+    // 					road_1.attr("placeholder", "Please fill out the field");
+				// 	}
             		
-            		formValidityChecker = false;
-					return false;
+    //         		formValidityChecker = false;
+				// 	return false;
 
 				} else if (!thana_1[0].validity.valid) {
 
@@ -241,6 +273,17 @@ $(document).ready(function() {
 
 					if (value == "") {
     					$('.thana-field .default').addClass('error').text("Please fill out the field");
+					}
+            		
+            		formValidityChecker = false;
+					return false;
+
+				} else if (!district[0].validity.valid) {
+
+					var value = district.val();
+
+					if (value == "") {
+    					$('.district-field .default').addClass('error').text("Please fill out the field");
 					}
             		
             		formValidityChecker = false;
@@ -330,6 +373,11 @@ $(document).ready(function() {
 		$('.thana-field .text').removeClass('error');
 	});
 
+	//script to remove error class from district field
+	$('.district-field .item').click( function(e) {
+		$('.district-field .text').removeClass('error');
+	});
+
 });
 
 
@@ -341,6 +389,11 @@ $('.upward .dropdown')
   .dropdown({
     direction: 'upward'
   });
+
+//script to enable semantic checkbox
+$('.ui.radio.checkbox')
+  .checkbox()
+;
 
 //script to set max & value field of hsc-year to current year
 var hscYear = document.getElementById('hsc-year');

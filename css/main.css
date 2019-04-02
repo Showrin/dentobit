@@ -680,6 +680,21 @@ body ::-webkit-scrollbar-thumb {
             margin-left: .4vw; }
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .bmdc-field .dropdown .item:hover {
           border-radius: 12px; }
+        #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .gmap-addr-field span {
+          float: right;
+          white-space: unset !important;
+          display: inline; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .gmap-addr-field span .inline {
+            margin: 0 0vh 0 0vh !important; }
+            #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .gmap-addr-field span .inline .field {
+              padding-right: 0 !important;
+              padding-left: 1.2vw; }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .gmap-addr-field span .ui.radio.checkbox input:checked ~ .box:after,
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .gmap-addr-field span .ui.radio.checkbox input:checked ~ label:after,
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .gmap-addr-field span .ui.radio.checkbox label:after {
+            background-color: rgba(86, 128, 213, 0.81); }
+          #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .gmap-addr-field span .ui.checkbox .box, #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .gmap-addr-field span .ui.checkbox label {
+            padding-left: 1.7vw; }
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .service-field-1-2 li,
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .service-field-1-3 li,
         #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .service-field-1-4 li,

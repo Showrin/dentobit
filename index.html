@@ -155,7 +155,7 @@
 									        </div>
 									    </div>
 									    <!-- title is removed -->
-									    <input id="full-name" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" pattern="[a-z A-Z]{1,200}" required>
+									    <input id="full-name" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" pattern="[a-z A-Z .]{1,200}" required>
 									</div>
 
 									<!-- a class named .contact-field is added in this div -->
@@ -433,6 +433,21 @@
 
 				        <div class="form-field-holder">
 				        	<div class="common-informations">
+
+				        		<div class="row">
+				        			
+				        			<div class="col l12 m12">
+				        				<!-- a class named .appointment-contact-field is added in this div -->
+										<div class="ui form nid-field">
+										  <div class="field">
+										    <label>National ID no.</label>
+										    <!-- Title is removed -->
+										    <input id="nid" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" pattern="[0-9]+" required>
+										  </div>
+										</div>
+				        			</div>
+
+				        		</div>
 				        		
 				        		<div class="row">
 				        			
@@ -585,17 +600,16 @@
 
 				        <span class="step-counter"> Step 4/6 </span>
   
-						<ul class="tabs group workplace-tab">
+						<!-- <ul class="tabs group workplace-tab">
 						    <li><a id="work-tab-1" class="active" href="#/work-one">Workplace 1</a></li>
 						    <li><a id="work-tab-2" href="#/work-two">Workplace 2 <span id="remove-tab-2">X</span></a></li>
 						    <li><a id="work-tab-3" href="#/work-three">Workplace 3 <span id="remove-tab-3">X</span> </a></li>
-						</ul>
-
-				        <div id="work-content" class="form-field-holder">
+						</ul> -->
+				        <div class="form-field-holder">
 
 				        	<div id="work-one">
 
-								<a id="add-btn-1" class="waves-effect waves-dark btn add-more-btn" onclick="addTab(this);"><b>+</b> Add More Workplace</a>
+								<!-- <a id="add-btn-1" class="waves-effect waves-dark btn add-more-btn" onclick="addTab(this);"><b>+</b> Add More Workplace</a> -->
 				        		
 					        	<div class="common-informations">
 					        		
@@ -617,12 +631,31 @@
 					        		<div class="row">
 					        			
 					        			<div class="col l12 m12">
-					        				<!-- a class named .workplace-addr-field is added -->
-											<div class="ui form workplace-addr-field">
+											
+											<div class="ui form gmap-addr-field">
 												<div class="field">
-													<label> Workplace Address</label>
+													<label> Google Map Address
+														<span> 
+
+															<div class="inline fields">
+															    <div class="field">
+															        <div class="ui radio checkbox">
+															            <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+															            <label>Actual</label>
+															        </div>
+															    </div>
+															    <div class="field">
+															        <div class="ui radio checkbox">
+															            <input type="radio" name="fruit" tabindex="0" class="hidden">
+															            <label>Nearby</label>
+															        </div>
+															    </div>
+															</div>
+
+														</span>
+													</label>
 													<!-- some attribute is added -->
-													<input id="workplace-addr" type="text" name="" placeholder="Type Here to Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+													<input id="gmap-addr" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
 												</div>
 											</div>
 					        			</div>
@@ -631,24 +664,13 @@
 					        		
 					        		<div class="row">
 					        			
-					        			<div class="col l6 m6">
-											<!-- a class named .house-addr-field is added -->
-											<div class="ui form house-addr-field">
+					        			<div class="col l12 m12">
+					        				<!-- a class named .workplace-addr-field is added -->
+											<div class="ui form workplace-addr-field">
 												<div class="field">
-													<label> House Address</label>
+													<label> Workplace Address</label>
 													<!-- some attribute is added -->
-													<input id="house-addr" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
-												</div>
-											</div>
-					        			</div>
-
-					        			<div class="col l6 m6">
-											<!-- a class named .road-field is added -->
-											<div class="ui form road-field">
-												<div class="field">
-													<label> Road</label>
-													<!-- some attribute is added -->
-													<input id="road" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+													<input id="workplace-addr" type="text" name="" placeholder="Type Here to Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
 												</div>
 											</div>
 					        			</div>
@@ -714,10 +736,10 @@
 
 					        			<div class="col l6 m6">
 
-					        				<div class="ui form thana-field">
+					        				<div class="ui form district-field">
 												<div class="field">
 												    <label>District</label>
-												    <select id="thana" class="ui upward search dropdown" name="thana" required="">
+												    <select id="district" class="ui upward search dropdown" name="district" required="">
 												    	<!-- Null value attribute is added to the first option -->
 												    	<option value="">Tap Here to Select</option>
 		                                                <option value="Barguna">Barguna</option>
@@ -813,458 +835,6 @@
 					        					<img src="assets/images/icon/add-image.png" id="image-3">
 
 					        					<label for="hospital-pic-input-1-3" id="overlay-div">
-					        					</label>
-					        				</div> -->
-
-					        			</div>
-
-					        		</div>
-					        		
-
-					        	</div>
-				        		
-					        	
-				        	</div>
-
-				        	<div id="work-two">
-
-								<a id="add-btn-2" class="waves-effect waves-dark btn add-more-btn" onclick="addTab(this);"><b>+</b> Add More Workplace</a>
-				        		
-					        	<div class="common-informations">
-					        		
-					        		<div class="row">
-					        			
-					        			<div class="col l12 m12">
-					        				<!-- a class named .workplace-name-field is added -->
-											<div class="ui form first workplace-name-field">
-												<div class="field">
-													<label>Workplace Name</label>
-													<!-- id and required and some other attribute is added -->
-													<input id="workplace-name" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-												</div>
-											</div>
-					        			</div>
-
-					        		</div>
-					        		
-					        		<div class="row">
-					        			
-					        			<div class="col l12 m12">
-					        				<!-- a class named .workplace-addr-field is added -->
-											<div class="ui form workplace-addr-field">
-												<div class="field">
-													<label> Workplace Address</label>
-													<!-- some attribute is added -->
-													<input id="workplace-addr" type="text" name="" placeholder="Type Here to Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-												</div>
-											</div>
-					        			</div>
-
-					        		</div>
-					        		
-					        		<div class="row">
-					        			
-					        			<div class="col l6 m6">
-											<div class="ui form">
-												<div class="field">
-													<label>House Address</label>
-													<input type="text" name="">
-												</div>
-											</div>
-					        			</div>
-
-					        			<div class="col l6 m6">
-											<div class="ui form">
-												<div class="field">
-													<label>Road</label>
-													<input type="text" name="">
-												</div>
-											</div>
-					        			</div>
-
-					        		</div>
-					        		
-					        		<div class="row">
-					        			
-					        			<div class="col l6 m6">
-					        				<div class="ui form">
-												<div class="field">
-												    <label>Thana</label>
-												    <select id="thana" class="ui search dropdown" name="thana" required="">
-												    	<option>Tap Here to Select</option>
-		                                                <option value="Adabor Thana">Adabor Thana</option>
-		                                                <option value="Badda Thana">Badda Thana</option>
-		                                                <option value="Bangsal Thana">Bangsal Thana</option>
-		                                                <option value="Bimanbandar Thana">Bimanbandar Thana</option>
-		                                                <option value="Cantonment Thana">Cantonment Thana</option>
-		                                                <option value="Chak Bazar Thana">Chak Bazar Thana</option>
-		                                                <option value="Dakshinkhan Thana">Dakshinkhan Thana</option>
-		                                                <option value="Darus Salam Thana">Darus Salam Thana</option>
-		                                                <option value="Demra Thana">Demra Thana</option>
-		                                                <option value="Dhanmondi Thana">Dhanmondi Thana</option>
-		                                                <option value="Gendaria Thana">Gendaria Thana</option>
-		                                                <option value="Gulshan Thana">Gulshan Thana</option>
-		                                                <option value="Hazaribagh Thana">Hazaribagh Thana</option>
-		                                                <option value="Jatrabari Thana">Jatrabari Thana</option>
-		                                                <option value="Kadamtali Thana">Kadamtali Thana</option>
-		                                                <option value="Kafrul Thana">Kafrul Thana</option>
-		                                                <option value="Kalabagan Thana">Kalabagan Thana</option>
-		                                                <option value="Kamrangirchar Thana">Kamrangirchar Thana</option>
-		                                                <option value="Keraniganj Upazila">Keraniganj Upazila</option>
-		                                                <option value="khilkhet Thana">khilkhet Thana</option>
-		                                                <option value="Kotwali Thana">Kotwali Thana</option>
-		                                                <option value="Lalbagh Thana">Lalbagh Thana</option>
-		                                                <option value="Mirpur Thana">Mirpur Thana</option>
-		                                                <option value="Mohammadpur Thana">Mohammadpur Thana</option>
-		                                                <option value="Motijheel Thana">Motijheel Thana</option>
-		                                                <option value="Newmarket Thana">Newmarket Thana</option>
-		                                                <option value="Pallabi Thana">Pallabi Thana</option>
-		                                                <option value="Paltan Thana">Paltan Thana</option>
-		                                                <option value="Ramna Thana">Ramna Thana</option>
-		                                                <option value="Rampura Thana">Rampura Thana</option>
-		                                                <option value="Sabujbagh Thana">Sabujbagh Thana</option>
-		                                                <option value="Shahbag Thana">Shahbag Thana</option>
-		                                                <option value="Sher-e-Bangla Nagar Thana">Sher-e-Bangla Nagar Thana</option>
-		                                                <option value="Shyampur Thana">Shyampur Thana</option>
-		                                                <option value="Sutrapur Thana">Sutrapur Thana</option>
-		                                                <option value="Tejgaon Thana">Tejgaon Thana</option>
-		                                                <option value="Mohakhali Thana">Mohakhali Thana</option>
-		                                                <option value="Tejgaon Industrial Area Thana">Tejgaon Industrial Area Thana</option>
-		                                                <option value="Turag Thana">Turag Thana</option>
-		                                                <option value="Uttara Thana">Uttara Thana</option>
-		                                                <option value="Uttar Khan Thana">Uttar Khan Thana</option>
-		                                                <option value="Others">Others</option>
-								                    </select>
-												</div>
-											</div>
-					        			</div>
-
-					        			<div class="col l6 m6">
-
-					        				<div class="ui form thana-field">
-												<div class="field">
-												    <label>District</label>
-												    <select id="thana" class="ui upward search dropdown" name="thana" required="">
-												    	<!-- Null value attribute is added to the first option -->
-												    	<option value="">Tap Here to Select</option>
-		                                                <option value="Barguna">Barguna</option>
-		                                                <option value="Barisal">Barisal</option>
-		                                                <option value="Bhola">Bhola</option>
-		                                                <option value="Jhalokati">Jhalokati</option>
-		                                                <option value="Patuakhali">Patuakhali</option>
-		                                                <option value="Pirojpur">Pirojpur</option>
-		                                                <option value="Bandarban">Bandarban</option>
-		                                                <option value="Brahmanbaria">Brahmanbaria</option>
-		                                                <option value="Chandpur">Chandpur</option>
-		                                                <option value="Chittagong">Chittagong</option>
-		                                                <option value="Comilla">Comilla</option>
-		                                                <option value="Cox's Bazar">Cox's Bazar</option>
-		                                                <option value="Feni">Feni</option>
-		                                                <option value="Khagrachhari">Khagrachhari</option>
-		                                                <option value="Lakshmipur">Lakshmipur</option>
-		                                                <option value="Noakhali">Noakhali</option>
-		                                                <option value="Rangamati">Rangamati</option>
-		                                                <option value="Dhaka">Dhaka</option>
-		                                                <option value="Faridpur">Faridpur</option>
-		                                                <option value="Gazipur">Gazipur</option>
-		                                                <option value="Gopalganj">Gopalganj</option>
-		                                                <option value="Kishoreganj">Kishoreganj</option>
-		                                                <option value="Madaripur">Madaripur</option>
-		                                                <option value="Manikganj">Manikganj</option>
-		                                                <option value="Munshiganj">Munshiganj</option>
-		                                                <option value="Narayanganj">Narayanganj</option>
-		                                                <option value="Narsingdi">Narsingdi</option>
-		                                                <option value="Rajbari">Rajbari</option>
-		                                                <option value="Shariatpur">Shariatpur</option>
-		                                                <option value="Tangail">Tangail</option>
-		                                                <option value="Bagerhat">Bagerhat</option>
-		                                                <option value="Chuadanga">Chuadanga</option>
-		                                                <option value="Jessore">Jessore</option>
-		                                                <option value="Jhenaidah">Jhenaidah</option>
-		                                                <option value="Khulna">Khulna</option>
-		                                                <option value="Kushtia">Kushtia</option>
-		                                                <option value="Magura">Magura</option>
-		                                                <option value="Meherpur">Meherpur</option>
-		                                                <option value="Narail">Narail</option>
-		                                                <option value="Satkhira">Satkhira</option>
-		                                                <option value="Jamalpur">Jamalpur</option>
-		                                                <option value="Mymensingh">Mymensingh</option>
-		                                                <option value="Netrokona">Netrokona</option>
-		                                                <option value="Manikganj">Manikganj</option>
-		                                                <option value="Sherpur">Sherpur</option>
-		                                                <option value="Bogra">Bogra</option>
-		                                                <option value="Joypurhat">Joypurhat</option>
-		                                                <option value="Naogaon">Naogaon</option>
-		                                                <option value="Natore">Natore</option>
-		                                                <option value="Chapai Nawabganj">Chapai Nawabganj</option>
-		                                                <option value="Pabna">Pabna</option>
-		                                                <option value="Rajshahi">Rajshahi</option>
-		                                                <option value="Sirajganj">Sirajganj</option>
-		                                                <option value="Dinajpur">Dinajpur</option>
-		                                                <option value="Gaibandha">Gaibandha</option>
-		                                                <option value="Kurigram">Kurigram</option>
-		                                                <option value="Lalmonirhat">Lalmonirhat</option>
-		                                                <option value="Nilphamari">Nilphamari</option>
-		                                                <option value="Panchagarh">Panchagarh</option>
-		                                                <option value="Rangpur">Rangpur</option>
-		                                                <option value="Thakurgaon">Thakurgaon</option>
-		                                                <option value="Habiganj">Habiganj</option>
-		                                                <option value="Moulvibazar">Moulvibazar</option>
-		                                                <option value="Sunamganj ">Sunamganj </option>
-		                                                <option value="Sylhet">Sylhet</option>
-								                    </select>
-												</div>
-											</div>
-											
-											<!-- <div id="hospital-pic-container">
-					        					<input id="hospital-pic-input-2-1" type="file" accept="image/*" name="hospital-pic-1" onchange="readURL(this)">
-
-					        					<img src="assets/images/icon/add-image.png" id="image-1">
-
-					        					<label for="hospital-pic-input-2-1" id="overlay-div">
-					        					</label>
-					        				</div>
-											
-											<div id="hospital-pic-container">
-					        					<input id="hospital-pic-input-2-2" type="file" accept="image/*" name="hospital-pic-2" onchange="readURL(this)">
-
-					        					<img src="assets/images/icon/add-image.png" id="image-2">
-
-					        					<label for="hospital-pic-input-2-2" id="overlay-div">
-					        					</label>
-					        				</div>
-											
-											<div id="hospital-pic-container">
-					        					<input id="hospital-pic-input-2-3" type="file" accept="image/*" name="hospital-pic-3" onchange="readURL(this)">
-
-					        					<img src="assets/images/icon/add-image.png" id="image-3">
-
-					        					<label for="hospital-pic-input-2-3" id="overlay-div">
-					        					</label>
-					        				</div> -->
-
-					        			</div>
-
-					        		</div>
-					        		
-
-					        	</div>
-				        		
-					        	
-				        	</div>
-
-				        	<div id="work-three">
-				        		
-					        	<div class="common-informations">
-					        		
-					        		<div class="row">
-					        			
-					        			<div class="col l12 m12">
-					        				<!-- a class named .workplace-name-field is added -->
-											<div class="ui form first workplace-name-field">
-												<div class="field">
-													<label>Workplace Name</label>
-													<!-- id and required and some other attribute is added -->
-													<input id="workplace-name" type="text" name="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-												</div>
-											</div>
-					        			</div>
-
-					        		</div>
-					        		
-					        		<div class="row">
-					        			
-					        			<div class="col l12 m12">
-					        				<!-- a class named .workplace-addr-field is added -->
-											<div class="ui form workplace-addr-field">
-												<div class="field">
-													<label> Workplace Address</label>
-													<!-- some attribute is added -->
-													<input id="workplace-addr" type="text" name="" placeholder="Type Here to Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-												</div>
-											</div>
-					        			</div>
-
-					        		</div>
-					        		
-					        		<div class="row">
-					        			
-					        			<div class="col l6 m6">
-											<div class="ui form">
-												<div class="field">
-													<label>House Address</label>
-													<input type="text" name="">
-												</div>
-											</div>
-					        			</div>
-
-					        			<div class="col l6 m6">
-											<div class="ui form">
-												<div class="field">
-													<label>Road</label>
-													<input type="text" name="">
-												</div>
-											</div>
-					        			</div>
-
-					        		</div>
-					        		
-					        		<div class="row">
-					        			
-					        			<div class="col l6 m6">
-					        				<div class="ui form">
-												<div class="field">
-												    <label>Thana</label>
-												    <select id="thana" class="ui search dropdown" name="thana" required="">
-												    	<option>Tap Here to Select</option>
-		                                                <option value="Adabor Thana">Adabor Thana</option>
-		                                                <option value="Badda Thana">Badda Thana</option>
-		                                                <option value="Bangsal Thana">Bangsal Thana</option>
-		                                                <option value="Bimanbandar Thana">Bimanbandar Thana</option>
-		                                                <option value="Cantonment Thana">Cantonment Thana</option>
-		                                                <option value="Chak Bazar Thana">Chak Bazar Thana</option>
-		                                                <option value="Dakshinkhan Thana">Dakshinkhan Thana</option>
-		                                                <option value="Darus Salam Thana">Darus Salam Thana</option>
-		                                                <option value="Demra Thana">Demra Thana</option>
-		                                                <option value="Dhanmondi Thana">Dhanmondi Thana</option>
-		                                                <option value="Gendaria Thana">Gendaria Thana</option>
-		                                                <option value="Gulshan Thana">Gulshan Thana</option>
-		                                                <option value="Hazaribagh Thana">Hazaribagh Thana</option>
-		                                                <option value="Jatrabari Thana">Jatrabari Thana</option>
-		                                                <option value="Kadamtali Thana">Kadamtali Thana</option>
-		                                                <option value="Kafrul Thana">Kafrul Thana</option>
-		                                                <option value="Kalabagan Thana">Kalabagan Thana</option>
-		                                                <option value="Kamrangirchar Thana">Kamrangirchar Thana</option>
-		                                                <option value="Keraniganj Upazila">Keraniganj Upazila</option>
-		                                                <option value="khilkhet Thana">khilkhet Thana</option>
-		                                                <option value="Kotwali Thana">Kotwali Thana</option>
-		                                                <option value="Lalbagh Thana">Lalbagh Thana</option>
-		                                                <option value="Mirpur Thana">Mirpur Thana</option>
-		                                                <option value="Mohammadpur Thana">Mohammadpur Thana</option>
-		                                                <option value="Motijheel Thana">Motijheel Thana</option>
-		                                                <option value="Newmarket Thana">Newmarket Thana</option>
-		                                                <option value="Pallabi Thana">Pallabi Thana</option>
-		                                                <option value="Paltan Thana">Paltan Thana</option>
-		                                                <option value="Ramna Thana">Ramna Thana</option>
-		                                                <option value="Rampura Thana">Rampura Thana</option>
-		                                                <option value="Sabujbagh Thana">Sabujbagh Thana</option>
-		                                                <option value="Shahbag Thana">Shahbag Thana</option>
-		                                                <option value="Sher-e-Bangla Nagar Thana">Sher-e-Bangla Nagar Thana</option>
-		                                                <option value="Shyampur Thana">Shyampur Thana</option>
-		                                                <option value="Sutrapur Thana">Sutrapur Thana</option>
-		                                                <option value="Tejgaon Thana">Tejgaon Thana</option>
-		                                                <option value="Mohakhali Thana">Mohakhali Thana</option>
-		                                                <option value="Tejgaon Industrial Area Thana">Tejgaon Industrial Area Thana</option>
-		                                                <option value="Turag Thana">Turag Thana</option>
-		                                                <option value="Uttara Thana">Uttara Thana</option>
-		                                                <option value="Uttar Khan Thana">Uttar Khan Thana</option>
-		                                                <option value="Others">Others</option>
-								                    </select>
-												</div>
-											</div>
-					        			</div>
-
-					        			<div class="col l6 m6">
-
-					        				<div class="ui form thana-field">
-												<div class="field">
-												    <label>District</label>
-												    <select id="thana" class="ui upward search dropdown" name="thana" required="">
-												    	<!-- Null value attribute is added to the first option -->
-												    	<option value="">Tap Here to Select</option>
-		                                                <option value="Barguna">Barguna</option>
-		                                                <option value="Barisal">Barisal</option>
-		                                                <option value="Bhola">Bhola</option>
-		                                                <option value="Jhalokati">Jhalokati</option>
-		                                                <option value="Patuakhali">Patuakhali</option>
-		                                                <option value="Pirojpur">Pirojpur</option>
-		                                                <option value="Bandarban">Bandarban</option>
-		                                                <option value="Brahmanbaria">Brahmanbaria</option>
-		                                                <option value="Chandpur">Chandpur</option>
-		                                                <option value="Chittagong">Chittagong</option>
-		                                                <option value="Comilla">Comilla</option>
-		                                                <option value="Cox's Bazar">Cox's Bazar</option>
-		                                                <option value="Feni">Feni</option>
-		                                                <option value="Khagrachhari">Khagrachhari</option>
-		                                                <option value="Lakshmipur">Lakshmipur</option>
-		                                                <option value="Noakhali">Noakhali</option>
-		                                                <option value="Rangamati">Rangamati</option>
-		                                                <option value="Dhaka">Dhaka</option>
-		                                                <option value="Faridpur">Faridpur</option>
-		                                                <option value="Gazipur">Gazipur</option>
-		                                                <option value="Gopalganj">Gopalganj</option>
-		                                                <option value="Kishoreganj">Kishoreganj</option>
-		                                                <option value="Madaripur">Madaripur</option>
-		                                                <option value="Manikganj">Manikganj</option>
-		                                                <option value="Munshiganj">Munshiganj</option>
-		                                                <option value="Narayanganj">Narayanganj</option>
-		                                                <option value="Narsingdi">Narsingdi</option>
-		                                                <option value="Rajbari">Rajbari</option>
-		                                                <option value="Shariatpur">Shariatpur</option>
-		                                                <option value="Tangail">Tangail</option>
-		                                                <option value="Bagerhat">Bagerhat</option>
-		                                                <option value="Chuadanga">Chuadanga</option>
-		                                                <option value="Jessore">Jessore</option>
-		                                                <option value="Jhenaidah">Jhenaidah</option>
-		                                                <option value="Khulna">Khulna</option>
-		                                                <option value="Kushtia">Kushtia</option>
-		                                                <option value="Magura">Magura</option>
-		                                                <option value="Meherpur">Meherpur</option>
-		                                                <option value="Narail">Narail</option>
-		                                                <option value="Satkhira">Satkhira</option>
-		                                                <option value="Jamalpur">Jamalpur</option>
-		                                                <option value="Mymensingh">Mymensingh</option>
-		                                                <option value="Netrokona">Netrokona</option>
-		                                                <option value="Manikganj">Manikganj</option>
-		                                                <option value="Sherpur">Sherpur</option>
-		                                                <option value="Bogra">Bogra</option>
-		                                                <option value="Joypurhat">Joypurhat</option>
-		                                                <option value="Naogaon">Naogaon</option>
-		                                                <option value="Natore">Natore</option>
-		                                                <option value="Chapai Nawabganj">Chapai Nawabganj</option>
-		                                                <option value="Pabna">Pabna</option>
-		                                                <option value="Rajshahi">Rajshahi</option>
-		                                                <option value="Sirajganj">Sirajganj</option>
-		                                                <option value="Dinajpur">Dinajpur</option>
-		                                                <option value="Gaibandha">Gaibandha</option>
-		                                                <option value="Kurigram">Kurigram</option>
-		                                                <option value="Lalmonirhat">Lalmonirhat</option>
-		                                                <option value="Nilphamari">Nilphamari</option>
-		                                                <option value="Panchagarh">Panchagarh</option>
-		                                                <option value="Rangpur">Rangpur</option>
-		                                                <option value="Thakurgaon">Thakurgaon</option>
-		                                                <option value="Habiganj">Habiganj</option>
-		                                                <option value="Moulvibazar">Moulvibazar</option>
-		                                                <option value="Sunamganj ">Sunamganj </option>
-		                                                <option value="Sylhet">Sylhet</option>
-								                    </select>
-												</div>
-											</div>
-											
-											<!-- <div id="hospital-pic-container">
-					        					<input id="hospital-pic-input-3-1" type="file" accept="image/*" name="hospital-pic-1" onchange="readURL(this);">
-
-					        					<img src="assets/images/icon/add-image.png" id="image-1">
-
-					        					<label for="hospital-pic-input-3-1" id="overlay-div">
-					        					</label>
-					        				</div>
-											
-											<div id="hospital-pic-container">
-					        					<input id="hospital-pic-input-3-2" type="file" accept="image/*" name="hospital-pic-2" onchange="readURL(this);">
-
-					        					<img src="assets/images/icon/add-image.png" id="image-2">
-
-					        					<label for="hospital-pic-input-3-2" id="overlay-div">
-					        					</label>
-					        				</div>
-											
-											<div id="hospital-pic-container">
-					        					<input id="hospital-pic-input-3-3" type="file" accept="image/*" name="hospital-pic-3" onchange="readURL(this);">
-
-					        					<img src="assets/images/icon/add-image.png" id="image-3">
-
-					        					<label for="hospital-pic-input-3-3" id="overlay-div">
 					        					</label>
 					        				</div> -->
 
