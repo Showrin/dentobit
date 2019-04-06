@@ -868,9 +868,9 @@ body ::-webkit-scrollbar-thumb {
             margin: 1vh 0.2vw;
             margin-top: 0;
             font-size: 1.2vw;
-            color: #343434;
+            color: #5d5c5c;
             letter-spacing: 0.08vw;
-            font-weight: normal; }
+            font-weight: bold; }
             #total-form-div #dynamic-form-area .form-stepper .step .form-field-holder .common-informations .field label span {
               word-wrap: break-word;
               white-space: pre-line; }
